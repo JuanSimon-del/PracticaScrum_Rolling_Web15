@@ -52,11 +52,12 @@
   border-radius: 14px;
   color: var(--rc-white);
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.4;
+  transition: background-color 0.2s ease;
 }
 
-.speaker-card__talk--highlight {
+.speaker-card__talk:hover {
   background-color: var(--rc-red);
 }
 
