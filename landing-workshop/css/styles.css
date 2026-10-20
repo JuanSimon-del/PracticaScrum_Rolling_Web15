@@ -1,0 +1,111 @@
+:root {
+  --rc-red: #e0202a;
+  --rc-red-dark: #a50d14;
+  --rc-red-deep: #6e070c;
+
+  --rc-black: #0b0b0c;
+  --rc-surface: #111113;
+  --rc-surface-2: #26262a;
+  --rc-border: #2c2c31;
+
+  --rc-white: #ffffff;
+  --rc-text-soft: #d4d4d8;
+  --rc-text-mute: #a1a1aa;
+
+  --rc-gradient: linear-gradient(160deg, #e0202a 0%, #a50d14 55%, #6e070c 100%);
+
+  --bs-body-bg: var(--rc-black);
+  --bs-body-color: var(--rc-white);
+  --bs-body-font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.tarjeta-pri {
+  background-color: var(--rc-black);
+  padding: 20px;
+  border: 1px solid #111113;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+  background-color: var(--rc-black);
+  padding: 20px;
+  border: 1px solid #111113;
+  border-radius: 8px;
+  text-align: center;
+}
+.tarjeta-larga {
+  grid-column: span 2;
+}
+.btn-general {
+  background-color: black;
+  color: var(--rc-white);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+.btn-pri {
+  background-color: var(--rc white);
+  color: var(--rc-black);
+  border: none;
+  border-radius: 20px;
+  padding: 9px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.banner-countdown {
+  background-color: transparent;
+  border: none;
+}
+
+.time-block {
+  background-color: #0d0d0d;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  padding: 8px 10px;
+  min-width: 52px;
+}
+
+.time-box {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.time-label {
+  color: #555555;
+  font-size: 0.55rem;
+  display: block;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+.progress-bar-custom {
+  background-color: #ff2a2a;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.text-danger-custom {
+  color: #ff2a2a;
+}
+.font-size-xs {
+  font-size: 0.75rem;
+}
+.etiqueta_general {
+  font-size: 0.75rem;
+  color: #d4d4d8;
+}
