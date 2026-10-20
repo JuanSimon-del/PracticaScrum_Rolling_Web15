@@ -17,205 +17,115 @@
   </head>
   <body>
     <main>
-      <section id="speakers">
+      <section id="fC" class="finalizarCompra-section">
         <div class="container">
-          <!-- Inicio de Sección de Speakers -->
-          <p class="speakers-label">SPEAKERS</p>
-          <h2 class="speakers-title">Diez charlas, un mismo objetivo</h2>
-          <div
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 g-4"
-          >
-            <div class="col">
-              <article class="speaker-card">
-                <img
-                  class="speaker-card__photo"
-                  src="https://plus.unsplash.com/premium_vector-1683141134058-8e07475bc6e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                  alt="Tomas Escudero"
-                />
+          <header class="finalizarCompra-header">
+            <p class="finalizarCompra-label">Compra segura</p>
+            <h2 class="finalizarCompra-title">Finalizá tu compra</h2>
+          </header>
 
-                <h3 class="speaker-card__name">Tomas Escudero</h3>
+          <div class="row g-4">
+            <div class="col-12 col-lg-7">
+              <form class="finalizarCompra-formulario">
+                <fieldset>
+                  <legend>Elegí tu entrada</legend>
 
-                <p class="speaker-card__talk speaker-card__talk--highlight">
-                  Diseño para developers
+                  <label class="finalizarCompra-opcion">
+                    <input
+                      type="radio"
+                      name="entrada"
+                      value="earlyBird"
+                      checked
+                    />
+
+                    <span>
+                      <strong>Early Bird</strong>
+                      <small>Presencial - hasta el 31/10</small>
+                    </span>
+
+                    <span>$25.000</span>
+                  </label>
+
+                  <label class="finalizarCompra-opcion">
+                    <input type="radio" name="entrada" value="general" />
+
+                    <span>
+                      <strong>General</strong>
+                      <small>Presencial - desde el 01/11</small>
+                    </span>
+
+                    <span>$35.000</span>
+                  </label>
+
+                  <label class="finalizarCompra-opcion">
+                    <input type="radio" name="entrada" value="online" />
+
+                    <span>
+                      <strong>Virtual</strong>
+                      <small>Transmisión en vivo y grabación</small>
+                    </span>
+
+                    <span>$15.000</span>
+                  </label>
+                </fieldset>
+
+                <div class="finalizarCompra-cantidad">
+                  <label for="cantidadEntradas">Cantidad</label>
+                  <input
+                    type="number"
+                    id="cantidadEntradas"
+                    name="cantidad"
+                    min="1"
+                    step="1"
+                    value="1"
+                    required
+                  />
+                </div>
+
+                <button type="button" class="finalizarCompra-continuar">
+                  Continuar
+                </button>
+
+                <p class="finalizarCompra-aclaracion">
+                  Pasarela de pago de ejemplo: No se procesan pagos ni se
+                  guardan datos.
                 </p>
-
-                <p class="speaker-card__description">
-                  Qué mira un equipo de diseño antes de que escribas código y cómo leer un mockup para construirlo igual.
-                </p>
-              </article>
+              </form>
             </div>
-            <div class="col">
-              <article class="speaker-card">
-                <img
-                  class="speaker-card__photo"
-                  src="https://plus.unsplash.com/premium_vector-1683141134058-8e07475bc6e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                  alt="Franco Diaz"
-                />
 
-                <h3 class="speaker-card__name">Franco Diaz</h3>
+            <div class="col-12 col-lg-5">
+              <aside class="finalizarCompra-resumen">
+                <p class="finalizarCompra-etiqueta">TU PEDIDO</p>
 
-                <p class="speaker-card__talk">
-                  De cero a tu primer proyecto
-                </p>
+                <h3>Workshop Rolling Code School</h3>
+                <p>Jueves 19/11 - 18.00 hs - Gral. Paz 576</p>
 
-                <p class="speaker-card__description">
-                  Un recorrido para pasar de mirar tutoriales a terminar una app simple con HTML, JavaScript y React.
-                </p>
-              </article>
+                <dl class="finalizarCompra-detalle">
+                  <div>
+                    <dt>1 entrada Early Bird</dt>
+                    <dd>$25.000</dd>
+                  </div>
+
+                  <div>
+                    <dt>Cargo por servicio (5%)</dt>
+                    <dd>$1.250</dd>
+                  </div>
+
+                  <div class="finalizarCompra-total">
+                    <dt>Total</dt>
+                    <dd>$26.250</dd>
+                  </div>
+                </dl>
+
+                  <p class="finalizarCompra-seguridad">
+                    <img
+                      src=""
+                      alt=""
+                      width="18"
+                      height="18"
+                    /> Pago protegido. Recibís la entrada por email. </p>
+              </aside>
             </div>
-            <div class="col">
-              <article class="speaker-card">
-                <img
-                  class="speaker-card__photo"
-                  src="https://plus.unsplash.com/premium_vector-1683141134058-8e07475bc6e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                  alt="Gaston"
-                />
-
-                <h3 class="speaker-card__name">Gaston</h3>
-
-                <p class="speaker-card__talk">
-                  Armá tu portfolio con IA
-                </p>
-
-                <p class="speaker-card__description">
-                  Cómo usar asistentes de IA para construir y publicar un portfolio que muestre lo que sabés hacer.
-                </p>
-              </article>
-            </div>
-            <div class="col">
-              <article class="speaker-card">
-                <img
-                  class="speaker-card__photo"
-                  src="https://plus.unsplash.com/premium_vector-1683141134058-8e07475bc6e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                  alt="Mauro"
-                />
-
-                <h3 class="speaker-card__name">Mauro</h3>
-
-                <p class="speaker-card__talk">
-                  Git y GitHub sin miedo
-                </p>
-
-                <p class="speaker-card__description">
-                  Los comandos que vas a usar todos los días y cómo trabajar en equipo sin pisar el código de otros.
-                </p>
-              </article>
-            </div>
-            <div class="col">
-              <article class="speaker-card">
-                <img
-                  class="speaker-card__photo"
-                  src="https://plus.unsplash.com/premium_vector-1683141134058-8e07475bc6e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                  alt="Jose Diaz"
-                />
-
-                <h3 class="speaker-card__name">Jose Diaz</h3>
-
-                <p class="speaker-card__talk">
-                  Tu primer backend con Node
-                </p>
-
-                <p class="speaker-card__description">
-                  Cómo se arma una API, qué hace una base de datos y por dónde empezar para conectar todo.
-                </p>
-              </article>
-            </div>
-            <div class="col">
-              <article class="speaker-card">
-                <img
-                  class="speaker-card__photo"
-                  src="https://plus.unsplash.com/premium_vector-1683141134058-8e07475bc6e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                  alt="Tomas Gomez"
-                />
-
-                <h3 class="speaker-card__name">Tomas Gomez</h3>
-
-                <p class="speaker-card__talk">
-                  Preparate para tu primera entrevista
-                </p>
-
-                <p class="speaker-card__description">
-                  Qué preguntan en una entrevista técnica, cómo practicar y cómo contar tus proyectos con claridad.
-                </p>
-              </article>
-            </div>
-            <div class="col">
-              <article class="speaker-card">
-                <img
-                  class="speaker-card__photo"
-                  src="https://plus.unsplash.com/premium_vector-1683141134058-8e07475bc6e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                  alt="Pablo Basso"
-                />
-
-                <h3 class="speaker-card__name">Pablo Basso</h3>
-
-                <p class="speaker-card__talk ">
-                  Mi primer trabajo en IT
-                </p>
-
-                <p class="speaker-card__description">
-                  Una charla en primera persona sobre cómo se consigue el primer puesto y qué se aprende en los primeros meses.
-                </p>
-              </article>
-            </div>
-            <div class="col">
-              <article class="speaker-card">
-                <img
-                  class="speaker-card__photo"
-                  src="https://plus.unsplash.com/premium_vector-1683141134058-8e07475bc6e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                  alt="Julian Martin"
-                />
-
-                <h3 class="speaker-card__name">Julian Martin</h3>
-
-                <p class="speaker-card__talk">
-                  Testing: cómo no romper todo
-                </p>
-
-                <p class="speaker-card__description">
-                  Qué es testear, por qué importa y cómo escribir tus primeras pruebas sin complicarte.
-                </p>
-              </article>
-            </div>
-            <div class="col">
-              <article class="speaker-card">
-                <img
-                  class="speaker-card__photo"
-                  src="https://images.unsplash.com/vector-1740296579390-87ec2d49a7c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                  alt="Daniela Cardozo"
-                />
-
-                <h3 class="speaker-card__name">Daniela Cardozo</h3>
-
-                <p class="speaker-card__talk ">
-                  Tu primer día como developer
-                </p>
-
-                <p class="speaker-card__description">
-                  Qué esperar de tu primera semana en un equipo, qué herramientas usar y cómo pedir ayuda sin miedo.
-                </p>
-              </article>
-            </div>
-            <div class="col">
-              <article class="speaker-card">
-                <img
-                  class="speaker-card__photo"
-                  src="https://plus.unsplash.com/premium_vector-1683141134058-8e07475bc6e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                  alt="Andres Perlo"
-                />
-
-                <h3 class="speaker-card__name">Andres Perlo</h3>
-
-                <p class="speaker-card__talk">
-                  Tu primera base de datos
-                </p>
-
-                <p class="speaker-card__description">
-                  Qué es una base de datos, para qué sirve y cómo guardar y consultar tus primeros datos.
-                </p>
-              </article>
-            </div>
-            <!-- Fin de Sección de Speakers -->
           </div>
         </div>
       </section>
