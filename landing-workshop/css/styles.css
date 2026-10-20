@@ -22,6 +22,7 @@
 
 /* Estilos para FC */
 .finalizarCompra-section {
+  margin-top: 56px;
   padding: 56px;
   background: var(--rc-gradient);
   border-radius: 40px;
@@ -240,4 +241,130 @@
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.finalizarCompra-opcion {
+  position: relative;
+}
+
+.finalizarCompra-opcion input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.finalizarCompra-etapas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.finalizarCompra-etapas li {
+  padding: 6px 12px;
+  border: 1px solid var(--rc-text-soft);
+  border-radius: 999px;
+  color: var(--rc-white);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.finalizarCompra-etapas .finalizarCompra-etapa-actual {
+  background-color: var(--rc-black);
+  border-color: var(--rc-black);
+}
+
+.finalizarCompra-titulo-etapas {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.finalizarCompra-titulo-etapas > .finalizarCompra-title,
+.finalizarCompra-titulo-etapas > .finalizarCompra-etapas {
+  margin: 0;
+}
+
+.finalizarCompra-titulo-etapas > .finalizarCompra-etapas {
+  flex-shrink: 0;
+}
+
+/* Estilos para tarjetas de perfil */
+.speakers-section {
+  padding: 56px;
+}
+
+.speaker-card {
+  height: 100%;
+  padding: 16px;
+  background-color: var(--rc-surface);
+  border: 1px solid var(--rc-border);
+  border-radius: 32px;
+}
+
+.speaker-card__photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.speaker-card__name {
+  margin: 16px 0 12px;
+  color: var(--rc-white);
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.speaker-card__talk {
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  background-color: var(--rc-surface-2);
+  border-radius: 14px;
+  color: var(--rc-white);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  transition: background-color 0.2s ease;
+}
+
+.speaker-card__talk:hover {
+  background-color: var(--rc-red);
+}
+
+.speaker-card__description {
+  margin: 0;
+  color: var(--rc-text-soft);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.speakers-label {
+  margin: 0 0 16px;
+  color: var(--rc-red);
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.speakers-title {
+  margin: 0 0 32px;
+  font-size: clamp(34px, 4.5vw, 56px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -1px;
 }
