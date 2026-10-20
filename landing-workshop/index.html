@@ -18,7 +18,7 @@
   <body>
     <main>
       <!-- Inicio de Sección de Speakers -->
-      <section id="speakers">
+      <section id="speakers" class="speakers-section">
         <div class="container">
           <p class="speakers-label">SPEAKERS</p>
           <h2 class="speakers-title">Diez charlas, un mismo objetivo</h2>
@@ -211,7 +211,130 @@
           </div>
         </div>
       </section>
+
       <!-- Inicio de Sección de Finalizar Compra -->
+      <section id="fC" class="finalizarCompra-section">
+        <div class="container">
+          <header class="finalizarCompra-header">
+            <p class="finalizarCompra-label">Compra segura</p>
+            <div class="finalizarCompra-titulo-etapas">
+              <h2 class="finalizarCompra-title">Finalizá tu compra</h2>
+              <ol class="finalizarCompra-etapas">
+                <li class="finalizarCompra-etapa-actual">1 - Entrada</li>
+                <li>2 Datos</li>
+                <li>3 Pago</li>
+                <li>4 Listo</li>
+              </ol>
+            </div>
+          </header>
+
+          <div class="row g-4">
+            <div class="col-12 col-lg-7">
+              <form class="finalizarCompra-formulario">
+                <fieldset>
+                  <legend>Elegí tu entrada</legend>
+
+                  <label class="finalizarCompra-opcion">
+                    <input
+                      type="radio"
+                      name="entrada"
+                      value="earlyBird"
+                      checked
+                    />
+
+                    <span>
+                      <strong>Early Bird</strong>
+                      <small>Presencial - hasta el 31/10</small>
+                    </span>
+
+                    <span>$25.000</span>
+                  </label>
+
+                  <label class="finalizarCompra-opcion">
+                    <input type="radio" name="entrada" value="general" />
+
+                    <span>
+                      <strong>General</strong>
+                      <small>Presencial - desde el 01/11</small>
+                    </span>
+
+                    <span>$35.000</span>
+                  </label>
+
+                  <label class="finalizarCompra-opcion">
+                    <input type="radio" name="entrada" value="online" />
+
+                    <span>
+                      <strong>Virtual</strong>
+                      <small>Transmisión en vivo y grabación</small>
+                    </span>
+
+                    <span>$15.000</span>
+                  </label>
+                </fieldset>
+
+                <div class="finalizarCompra-cantidad">
+                  <label for="cantidadEntradas">Cantidad: </label>
+                  <input
+                    type="number"
+                    id="cantidadEntradas"
+                    name="cantidad"
+                    min="1"
+                    step="1"
+                    value="1"
+                    required
+                  />
+                </div>
+
+                <button type="button" class="finalizarCompra-continuar">
+                  Continuar
+                </button>
+
+                <p class="finalizarCompra-aclaracion">
+                  Pasarela de pago de ejemplo: No se procesan pagos ni se
+                  guardan datos.
+                </p>
+              </form>
+            </div>
+
+            <div class="col-12 col-lg-5">
+              <aside class="finalizarCompra-resumen">
+                <p class="finalizarCompra-etiqueta">TU PEDIDO</p>
+
+                <h3>Workshop Rolling Code School</h3>
+                <p>Jueves 19/11 - 18.00 hs - Gral. Paz 576</p>
+
+                <dl class="finalizarCompra-detalle">
+                  <div>
+                    <dt>1 entrada Early Bird</dt>
+                    <dd>$25.000</dd>
+                  </div>
+
+                  <div>
+                    <dt>Cargo por servicio (5%)</dt>
+                    <dd>$1.250</dd>
+                  </div>
+
+                  <div class="finalizarCompra-total">
+                    <dt>Total</dt>
+                    <dd>$26.250</dd>
+                  </div>
+                </dl>
+
+                <p class="finalizarCompra-seguridad">
+                  <img
+                    src="./img/iconos/candado.svg"
+                    alt=""
+                    width="18"
+                    height="18"
+                  />
+                  Pago protegido. Recibís la entrada por email.
+                </p>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
