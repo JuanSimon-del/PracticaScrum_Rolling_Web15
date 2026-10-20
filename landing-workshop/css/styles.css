@@ -215,7 +215,7 @@
 
 .finalizarCompra-aclaracion {
   margin: 20px 0 0;
-  color: var(--rc-text-mute);
+  color: #52525b;
   font-size: 14px;
   line-height: 1.55;
 }
@@ -367,4 +367,15 @@
   font-weight: 800;
   line-height: 1;
   letter-spacing: -1px;
+}
+
+@media (min-width: 1400px) {
+  .finalizarCompra-section {
+    max-width: 1312px;
+    margin-inline: auto;
+  }
+
+  .finalizarCompra-section > .container {
+    padding-inline: 0;
+  }
 }
