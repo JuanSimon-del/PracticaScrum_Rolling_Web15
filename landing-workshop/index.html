@@ -4,26 +4,125 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,800;1,300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,800&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link href="./css/styles.css" rel="stylesheet" />
-
     <title>Workshop | Rolling Code School</title>
   </head>
   <body>
     <main>
-<<<<<<< HEAD
-      <!-- Inicio de Sección de Speakers -->
+      <section class="bloque_hero my-4 mx-auto">
+        <div class="container custom-container">
+          <div class="row align-items-center">
+            <div class="col-lg-7 pe-lg-5">
+              <p class="etiqueta_parrafo mb-3">
+                <em class="fw-light">WORKSHOP </em>
+                <strong>ENTRADAS LIMITADAS</strong>
+              </p>
+
+              <h1 class="titulo-principal mb-4">
+                ¿POR DÓNDE EMPIEZO A
+                <span class="palabra_programar">PROGRAMAR?</span>
+              </h1>
+
+              <p class="parrafo-principal mb-5">
+                Una tarde con diez speakers de Rolling Code School para ordenar
+                tus primeros pasos: qué aprender, cómo practicar y cómo mostrar
+                lo que sabés.
+              </p>
+
+              <div class="d-flex gap-3 mb-3">
+                <button class="btn btn-outline-light rounded-pill px-4">
+                  Comprar entrada
+                </button>
+                <button class="btn btn-outline-light rounded-pill px-4">
+                  Ver agenda
+                </button>
+              </div>
+            </div>
+
+            <div class="col-lg-5 mt-5 mt-lg-0">
+              <div class="card card_agenda p-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4">
+                    <img
+                      src="./img/iconos/calendario.svg"
+                      alt="Calendario"
+                      class="me-3"
+                      width="36"
+                    />
+                    <div>
+                      <p class="mb-0 texto-agenda-titulo">JUE 19/11</p>
+                      <p class="mb-0 texto-agenda-sub text-secondary">
+                        18.00 hs
+                      </p>
+                    </div>
+                  </div>
+
+                  <hr class="border-secondary" />
+
+                  <div class="d-flex align-items-center mb-4">
+                    <img
+                      src="./img/iconos/candado.svg"
+                      alt="Ubicación"
+                      class="me-3"
+                      width="36"
+                    />
+                    <div>
+                      <p class="mb-0 fw-bold fs-5">Rolling Code School</p>
+                      <p class="mb-0 text-secondary">
+                        Gral. Paz 576, Entrepiso
+                      </p>
+                    </div>
+                  </div>
+
+                  <hr class="border-secondary" />
+
+                  <div class="d-flex align-items-center mb-4">
+                    <img
+                      src="./img/iconos/entrada.svg"
+                      alt="Entrada"
+                      class="me-3"
+                      width="36"
+                    />
+                    <div>
+                      <p class="mb-0 fw-bold fs-5">Entradas desde $15.000</p>
+                      <p class="mb-0 text-secondary">
+                        Early Bird hasta el 31/10
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex gap-2 flex-wrap mt-4">
+                    <span
+                      class="badge rounded-pill bg-dark border border-secondary px-3 py-2 fw-normal"
+                      >Presencial</span
+                    >
+                    <span
+                      class="badge rounded-pill bg-dark border border-secondary px-3 py-2 fw-normal"
+                      >Virtual</span
+                    >
+                    <span
+                      class="badge rounded-pill bg-danger px-3 py-2 fw-normal"
+                      >Cupos limitados</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="speakers" class="speakers-section">
         <div class="container">
           <p class="speakers-label">SPEAKERS</p>
@@ -35,14 +134,11 @@
               <article class="speaker-card">
                 <img
                   class="speaker-card__photo"
-                  src="./img/speaker-01-tomas-escudero.jpg"
+                  src="./img/speakers/speaker-01-tomas-escudero.jpg"
                   alt="Tomas Escudero"
                 />
-
                 <h3 class="speaker-card__name">Tomas Escudero</h3>
-
                 <p class="speaker-card__talk">Diseño para developers</p>
-
                 <p class="speaker-card__description">
                   Qué mira un equipo de diseño antes de que escribas código y
                   cómo leer un mockup para construirlo igual.
@@ -53,14 +149,11 @@
               <article class="speaker-card">
                 <img
                   class="speaker-card__photo"
-                  src="./img/speaker-02-franco-diaz.jpg"
+                  src="./img/speakers/speaker-02-franco-diaz.jpg"
                   alt="Franco Diaz"
                 />
-
                 <h3 class="speaker-card__name">Franco Diaz</h3>
-
                 <p class="speaker-card__talk">De cero a tu primer proyecto</p>
-
                 <p class="speaker-card__description">
                   Un recorrido para pasar de mirar tutoriales a terminar una app
                   simple con HTML, JavaScript y React.
@@ -71,14 +164,11 @@
               <article class="speaker-card">
                 <img
                   class="speaker-card__photo"
-                  src="./img/speaker-03-gaston.jpg"
+                  src="./img/speakers/speaker-03-gaston.jpg"
                   alt="Gaston"
                 />
-
                 <h3 class="speaker-card__name">Gaston</h3>
-
                 <p class="speaker-card__talk">Armá tu portfolio con IA</p>
-
                 <p class="speaker-card__description">
                   Cómo usar asistentes de IA para construir y publicar un
                   portfolio que muestre lo que sabés hacer.
@@ -89,14 +179,11 @@
               <article class="speaker-card">
                 <img
                   class="speaker-card__photo"
-                  src="./img/speaker-04-mauro.jpg"
+                  src="./img/speakers/speaker-04-mauro.jpg"
                   alt="Mauro"
                 />
-
                 <h3 class="speaker-card__name">Mauro</h3>
-
                 <p class="speaker-card__talk">Git y GitHub sin miedo</p>
-
                 <p class="speaker-card__description">
                   Los comandos que vas a usar todos los días y cómo trabajar en
                   equipo sin pisar el código de otros.
@@ -107,14 +194,11 @@
               <article class="speaker-card">
                 <img
                   class="speaker-card__photo"
-                  src="./img/speaker-05-jose-diaz.jpg"
+                  src="./img/speakers/speaker-05-jose-diaz.jpg"
                   alt="Jose Diaz"
                 />
-
                 <h3 class="speaker-card__name">Jose Diaz</h3>
-
                 <p class="speaker-card__talk">Tu primer backend con Node</p>
-
                 <p class="speaker-card__description">
                   Cómo se arma una API, qué hace una base de datos y por dónde
                   empezar para conectar todo.
@@ -125,16 +209,13 @@
               <article class="speaker-card">
                 <img
                   class="speaker-card__photo"
-                  src="./img/speaker-06-tomas-gomez.jpg"
+                  src="./img/speakers/speaker-06-tomas-gomez.jpg"
                   alt="Tomas Gomez"
                 />
-
                 <h3 class="speaker-card__name">Tomas Gomez</h3>
-
                 <p class="speaker-card__talk">
                   Preparate para tu primera entrevista
                 </p>
-
                 <p class="speaker-card__description">
                   Qué preguntan en una entrevista técnica, cómo practicar y cómo
                   contar tus proyectos con claridad.
@@ -145,14 +226,11 @@
               <article class="speaker-card">
                 <img
                   class="speaker-card__photo"
-                  src="./img/speaker-07-pablo-basso.jpg"
+                  src="./img/speakers/speaker-07-pablo-basso.jpg"
                   alt="Pablo Basso"
                 />
-
                 <h3 class="speaker-card__name">Pablo Basso</h3>
-
                 <p class="speaker-card__talk">Mi primer trabajo en IT</p>
-
                 <p class="speaker-card__description">
                   Una charla en primera persona sobre cómo se consigue el primer
                   puesto y qué se aprende en los primeros meses.
@@ -163,14 +241,11 @@
               <article class="speaker-card">
                 <img
                   class="speaker-card__photo"
-                  src="./img/speaker-08-julian-martin.jpg"
+                  src="./img/speakers/speaker-08-julian-martin.jpg"
                   alt="Julian Martin"
                 />
-
                 <h3 class="speaker-card__name">Julian Martin</h3>
-
                 <p class="speaker-card__talk">Testing: cómo no romper todo</p>
-
                 <p class="speaker-card__description">
                   Qué es testear, por qué importa y cómo escribir tus primeras
                   pruebas sin complicarte.
@@ -181,14 +256,11 @@
               <article class="speaker-card">
                 <img
                   class="speaker-card__photo"
-                  src="./img/speaker-09-daniela-cardozo.jpg"
+                  src="./img/speakers/speaker-09-daniela-cardozo.jpg"
                   alt="Daniela Cardozo"
                 />
-
                 <h3 class="speaker-card__name">Daniela Cardozo</h3>
-
                 <p class="speaker-card__talk">Tu primer día como developer</p>
-
                 <p class="speaker-card__description">
                   Qué esperar de tu primera semana en un equipo, qué
                   herramientas usar y cómo pedir ayuda sin miedo.
@@ -199,26 +271,21 @@
               <article class="speaker-card">
                 <img
                   class="speaker-card__photo"
-                  src="./img/speaker-10-andres-perlo.jpg"
+                  src="./img/speakers/speaker-10-andres-perlo.jpg"
                   alt="Andres Perlo"
                 />
-
                 <h3 class="speaker-card__name">Andres Perlo</h3>
-
                 <p class="speaker-card__talk">Tu primera base de datos</p>
-
                 <p class="speaker-card__description">
                   Qué es una base de datos, para qué sirve y cómo guardar y
                   consultar tus primeros datos.
                 </p>
               </article>
             </div>
-            <!-- Fin de Sección de Speakers -->
           </div>
         </div>
       </section>
 
-      <!-- Inicio de Sección de Finalizar Compra -->
       <section id="fC" class="finalizarCompra-section">
         <div class="container">
           <header class="finalizarCompra-header">
@@ -239,7 +306,6 @@
               <form class="finalizarCompra-formulario">
                 <fieldset>
                   <legend>Elegí tu entrada</legend>
-
                   <label class="finalizarCompra-opcion">
                     <input
                       type="radio"
@@ -247,34 +313,26 @@
                       value="earlyBird"
                       checked
                     />
-
                     <span>
                       <strong>Early Bird</strong>
                       <small>Presencial - hasta el 31/10</small>
                     </span>
-
                     <span>$25.000</span>
                   </label>
-
                   <label class="finalizarCompra-opcion">
                     <input type="radio" name="entrada" value="general" />
-
                     <span>
                       <strong>General</strong>
                       <small>Presencial - desde el 01/11</small>
                     </span>
-
                     <span>$35.000</span>
                   </label>
-
                   <label class="finalizarCompra-opcion">
                     <input type="radio" name="entrada" value="online" />
-
                     <span>
                       <strong>Virtual</strong>
                       <small>Transmisión en vivo y grabación</small>
                     </span>
-
                     <span>$15.000</span>
                   </label>
                 </fieldset>
@@ -294,28 +352,6 @@
 
                 <button type="button" class="finalizarCompra-continuar">
                   Continuar
-=======
-      <section class="bloque_hero my-4 mx-auto">
-        <div class="container custom-container">
-          <div class="row align-items-center">
-            <div class="col-lg-7 pe-lg-5">
-              <p class="etiqueta_parrafo mb-3">
-                <em class="fw-light">WORKSHOP </em>
-                <strong>ENTRADAS LIMITADAS</strong>
-              </p>
-              <h1 class="titulo-principal mb-4">
-                ¿POR DÓNDE EMPIEZO A
-                <p class="palabra_programar">PROGRAMAR?</p>
-              </h1>
-              <p class="parrafo-principal mb-5">
-                Una tarde con diez speakers de Rolling Code School para ordenar
-                tus primeros pasos: qué aprender, cómo practicar y cómo mostrar
-                lo que sabés.
-              </p>
-              <div class="d-flex gap-3">
-                <button class="btn btn-outline-light rounded-pill px-4">
-                  Comprar Entrada
->>>>>>> 960b67d (Implementación de iconos en el Hero)
                 </button>
 
                 <p class="finalizarCompra-aclaracion">
@@ -325,11 +361,9 @@
               </form>
             </div>
 
-<<<<<<< HEAD
             <div class="col-12 col-lg-5">
               <aside class="finalizarCompra-resumen">
                 <p class="finalizarCompra-etiqueta">TU PEDIDO</p>
-
                 <h3>Workshop Rolling Code School</h3>
                 <p>Jueves 19/11 - 18.00 hs - Gral. Paz 576</p>
 
@@ -337,63 +371,11 @@
                   <div>
                     <dt>1 entrada Early Bird</dt>
                     <dd>$25.000</dd>
-=======
-            <div class="col-lg-5 mt-5 mt-lg-0">
-              <div class="card card_agenda p-4">
-                <div class="card-body">
-                  <div class="d-flex align-items-center mb-4">
-                    <div class="d-flex align-items-center mb-4">
-                      <img
-                        src="./img/iconos/calendario.svg"
-                        alt="Calendario"
-                        class="me-3"
-                        width="36"
-                      />
-                      <div>
-                        <p class="mb-0 texto-agenda-titulo">JUE 19/11</p>
-                        <p class="mb-0 texto-agenda-sub text-secondary">
-                          18.00 hs
-                        </p>
-                      </div>
-                    </div>
                   </div>
-                  <hr class="border-secondary" />
-                  <div class="d-flex align-items-center mb-4">
-                    <img
-                      src="./img/iconos/candado.svg"
-                      alt="Ubicación"
-                      class="me-3"
-                      width="36"
-                    />
-                    <div>
-                      <p class="mb-0 fw-bold fs-5">Rolling Code School</p>
-                      <p class="mb-0 text-secondary">
-                        Gral. Paz 576, Entrepiso
-                      </p>
-                    </div>
-                  </div>
-                  <hr class="border-secondary" />
-                  <div class="d-flex align-items-center mb-4">
-                    <img
-                      src="./img/iconos/entrada.svg"
-                      alt="Entrada"
-                      class="me-3"
-                      width="36"
-                    />
-                    <div>
-                      <p class="mb-0 fw-bold fs-5">Entradas desde $15.000</p>
-                      <p class="mb-0 text-secondary">
-                        Early Bird hasta el 31/10
-                      </p>
-                    </div>
->>>>>>> 960b67d (Implementación de iconos en el Hero)
-                  </div>
-
                   <div>
                     <dt>Cargo por servicio (5%)</dt>
                     <dd>$1.250</dd>
                   </div>
-
                   <div class="finalizarCompra-total">
                     <dt>Total</dt>
                     <dd>$26.250</dd>
