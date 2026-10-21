@@ -438,3 +438,19 @@
     padding-inline: 0;
   }
 }
+
+.icono-red-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--rc-border);
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.icono-red-social:hover {
+  background-color: var(--rc-surface-2);
+  border-color: var(--rc-text-soft);
+}
