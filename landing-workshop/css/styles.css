@@ -581,6 +581,11 @@
   border: 1px solid var(--rc-border);
   border-radius: 32px;
   container-type: inline-size;
+  transition: border-color 0.2s ease;
+}
+
+.speaker-card:hover {
+  border-color: var(--rc-text-mute);
 }
 
 .speaker-card__photo {
