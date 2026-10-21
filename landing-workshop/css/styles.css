@@ -580,6 +580,12 @@
   background-color: var(--rc-surface);
   border: 1px solid var(--rc-border);
   border-radius: 32px;
+  container-type: inline-size;
+  transition: border-color 0.2s ease;
+}
+
+.speaker-card:hover {
+  border-color: var(--rc-text-mute);
 }
 
 .speaker-card__photo {
@@ -593,7 +599,7 @@
 .speaker-card__name {
   margin: 16px 0 12px;
   color: var(--rc-white);
-  font-size: 26px;
+  font-size: clamp(16px, 10cqi, 26px);
   font-weight: 800;
   line-height: 1.2;
 }
@@ -608,6 +614,7 @@
   font-weight: 600;
   line-height: 1.4;
   transition: background-color 0.2s ease;
+  min-height: calc(2 * 1.4em + 20px);
 }
 
 .speaker-card__talk:hover {
