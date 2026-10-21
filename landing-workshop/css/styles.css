@@ -674,3 +674,10 @@
   line-height: 1.1;
   margin-bottom: 8px;
 }
+
+.estadistica-texto {
+  color: var(--rc-text-soft);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
