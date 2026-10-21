@@ -16,8 +16,27 @@
   --bs-body-font-family: "Plus Jakarta Sans", system-ui, sans-serif;
 }
 
-.container {
+.custom-container {
   max-width: 1200px;
+}
+
+.titulo-principal p {
+  color: var(--rc-black);
+  background-color: transparent;
+}
+
+.titulo-principal {
+  font-weight: 800;
+  font-size: clamp(40px, 6vw, 88px);
+  line-height: 1.02;
+  letter-spacing: -1.5px;
+}
+
+.bloque_hero {
+  background: var(--rc-red);
+  border-radius: 40px;
+  padding: 56px 0;
+  max-width: 1312px;
 }
 
 /* Estilos para FC */
