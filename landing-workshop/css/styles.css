@@ -44,5 +44,39 @@
 
 .card_agenda {
   background-color: var(--rc-black);
+  border: 1px solid var(--rc-border);
   border-radius: 32px;
+}
+
+.blockquote {
+  color: var(--rc-red);
+  background-color: transparent;
+}
+
+.btn-rc {
+  background-color: var(--rc-black);
+  color: var(--rc-white);
+  font-weight: 800;
+  min-height: 52px;
+  border: none;
+}
+
+.btn-rc:hover {
+  background-color: #000;
+  color: var(--rc-white);
+}
+
+.btn-outline-light {
+  font-weight: 800;
+  min-height: 52px;
+}
+
+.texto-agenda-titulo {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.texto-agenda-sub {
+  font-size: 24px;
+  font-weight: 400;
 }
