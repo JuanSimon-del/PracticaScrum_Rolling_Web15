@@ -400,6 +400,11 @@ nav.navegacion-principal .nav-link.active {
   font-weight: 700;
 }
 
+.sponsor-form .form-label--required::after {
+  color: var(--rc-red);
+  content: " *";
+}
+
 .sponsor-form .form-control {
   font-size: 1rem;
 }
