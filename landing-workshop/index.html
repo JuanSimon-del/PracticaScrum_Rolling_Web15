@@ -522,7 +522,7 @@
                   />
                 </div>
                 <div class="col-12">
-                  <label class="form-label" for="tipo-sponsor">TIPO DE ESPONSOR</label>
+                  <label class="form-label form-label--required" for="tipo-sponsor">TIPO DE ESPONSOR</label>
                   <select
                     class="form-select"
                     id="tipo-sponsor"
@@ -586,7 +586,10 @@
         </div>
       </section>
 
-    <div
+      <div class="container fw-bold">
+        <p></p>
+      </div>
+      <div
         class="contenedor container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center"
       >
         <!-- SECCIÓN 3: TARJETAS DE ENTRADAS -->
@@ -793,7 +796,12 @@
                   />
                 </div>
 
-                <button type="button" class="finalizarCompra-continuar">
+                <button
+                  type="button"
+                  class="finalizarCompra-continuar"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalDatos"
+                >
                   Continuar
                 </button>
 
@@ -839,22 +847,200 @@
           </div>
         </div>
       </section>
+
+      <div class="modal fade" id="modalDatos" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal-rc-content">
+            <div class="modal-header border-0 pb-0">
+              <h5 class="modal-title fw-bold fs-4">2 - Datos</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body border-0 pt-3">
+              <form class="form-validacion">
+                <div class="mb-3">
+                  <label for="nombreUsuario" class="form-label fw-bold small">
+                    Nombre completo:
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control modal-rc-input px-3"
+                    id="nombreUsuario"
+                    maxlength="20"
+                    minlength="4"
+                    required
+                    placeholder="Agostini, Amado"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="dniUsuario" class="form-label fw-bold small">
+                    DNI:
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control modal-rc-input px-3"
+                    id="dniUsuario"
+                    maxlength="8"
+                    inputmode="numeric"
+                    placeholder="44333555"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="emailUsuario" class="form-label fw-bold small">
+                    Email:
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control modal-rc-input px-3"
+                    id="emailUsuario"
+                    maxlength="25"
+                    minlength="4"
+                    required
+                    placeholder="amado@gmail.com"
+                  />
+                </div>
+
+                <div class="modal-footer border-0 pt-0">
+                  <button
+                    type="submit"
+                    class="finalizarCompra-continuar boton-siguiente w-100"
+                  >
+                    Continuar al Pago
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalPago" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal-rc-content">
+            <div class="modal-header border-0 pb-0">
+              <h5 class="modal-title fw-bold fs-4">3 - Pago</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body border-0 pt-3">
+              <form class="form-validacion">
+                <div class="mb-3">
+                  <label for="tarjeta" class="form-label fw-bold small">
+                    Número de Tarjeta:
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control modal-rc-input px-3"
+                    id="tarjeta"
+                    placeholder="0000 0000 0000 0000"
+                    minlength="16"
+                    maxlength="16"
+                    required
+                  />
+                </div>
+                <div class="row">
+                  <div class="col-6 mb-3">
+                    <label for="vencimiento" class="form-label fw-bold small">
+                      Vencimiento:
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control modal-rc-input px-3 text-center"
+                      id="vencimiento"
+                      placeholder="MM/AA"
+                      minlength="4"
+                      maxlength="4"
+                      required
+                    />
+                  </div>
+                  <div class="col-6 mb-3">
+                    <label for="cvv" class="form-label fw-bold small">
+                      CVV:
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control modal-rc-input px-3 text-center"
+                      id="cvv"
+                      placeholder="123"
+                      minlength="3"
+                      maxlength="4"
+                      required
+                    />
+                  </div>
+
+                  <div class="modal-footer border-0 pt-0">
+                    <button
+                      type="submit"
+                      class="finalizarCompra-continuar boton-siguiente w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalPago"
+                    >
+                      Confirmar Pago
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalListo" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal-rc-content text-center py-4">
+            <div class="modal-body border-0">
+              <i class="bi bi-check-circle-fill text-success"></i>
+              <h5 class="fw-bold fs-3 mb-3 mt-3">¡Compra exitosa!</h5>
+              <p class="text-secondary mb-4">Entrada enviada a tu email.</p>
+
+              <button
+                type="button"
+                class="finalizarCompra-continuar w-100"
+                data-bs-dismiss="modal"
+              >
+                Entendido
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="mt-5 pt-4 pb-5 border-top border-secondary">
       <div class="container custom-container">
         <section
-          class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4"
+          class="bloque-section-footer d-flex flex-column flex-md-row justify-content-between align-items-center gap-4"
         >
           <div class="logo-social-rolling">
             <img
               src="./img/logo-rolling-blanco.png"
               alt="Rolling Code School"
               height="32"
+              class="logo-social-rolling-img"
             />
+            <p>RollingCode © 2026</p>
           </div>
 
-          <div class="red-social d-flex gap-3 flex-wrap justify-content-center">
+          <div
+            class="bloque-iconos-footer red-social d-flex gap-3 flex-wrap justify-content-center"
+          >
+            <a
+              href="https://api.whatsapp.com/send/?phone=5493815783030&text&type=phone_number&app_absent=0"
+              class="icono-red-social"
+              target="_blank"
+            >
+              <i class="bi bi-whatsapp"></i>
+            </a>
+
             <a
               href="https://www.instagram.com/rollingcodeschool"
               class="icono-red-social"
