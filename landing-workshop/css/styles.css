@@ -14,6 +14,73 @@
   --bs-body-color: var(--rc-white);
   --bs-body-font-family: "Plus Jakarta Sans", system-ui, sans-serif;
 }
+.logo-esquina {
+  position: absolute;
+  top: 0.5px;
+  left: 20px;
+  width: clamp(150px, 18vw, 210px);
+  height: auto;
+}
+nav.navegacion-principal {
+  width: 50%;
+  max-width: 600px;
+  margin-left: auto;
+  padding-top: 12px;
+}
+
+nav.navegacion-principal .nav {
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+nav.navegacion-principal .nav-link {
+  color: var(--rc-text-soft);
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 15px;
+  padding: 7px 10px;
+}
+
+nav.navegacion-principal .nav-link.active {
+  color: var(--rc-text-soft);
+  background-color: var(--rc-red);
+}
+
+@media (max-width: 767.98px) {
+  nav.navegacion-principal {
+    width: 100%;
+    max-width: none;
+  }
+}
+.hora {
+  color: var(--rc-red);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.evento {
+  color: var(--rc-text-soft);
+  margin-right: 15px;
+  font-size: 24px;
+}
+.subtexto-agenda {
+  color: var(--rc-text-mute);
+  font-size: 20px;
+  margin-left: 15px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 0;
+}
+
+.card-title {
+  margin-top: 0;
+}
+.card-text {
+  color: var(--rc-text-mute);
+}
 .contenedor {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -206,6 +273,71 @@
 }
 .container {
   max-width: 1200px;
+}
+
+.bloque-agregado .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bloque-agregado .bloque-agregado-izquierda {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.bloque-agregado .bloque-agregado-derecha {
+  width: 100%;
+  align-items: stretch;
+}
+
+.subdivisiones-derecha {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.subdivisiones-derecha > div {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rc-border);
+  font-size: 0.8rem;
+}
+
+.subdivisiones-derecha > div:first-child {
+  border-top: 1px solid var(--rc-border);
+}
+
+.subdivisiones-derecha p {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}
+
+.subdivisiones-derecha .hora {
+  flex: 0 0 72px;
+  text-align: left;
+}
+
+.subdivisiones-derecha .subtexto-agenda {
+  display: block;
+  margin: 4px 0 0 84px;
+  color: var(--rc-text-mute);
+  opacity: 0.65;
+}
+
+@media (min-width: 768px) {
+  .bloque-agregado .bloque-agregado-izquierda {
+    justify-content: flex-start;
+  }
+
+  .bloque-agregado .bloque-agregado-izquierda .card-title {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 767.98px) {
