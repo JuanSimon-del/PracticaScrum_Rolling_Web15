@@ -212,8 +212,12 @@
         <div class="container">
           <p class="speakers-label">SPEAKERS</p>
           <h2 class="speakers-title">Diez charlas, un mismo objetivo</h2>
+          <p class="speakers-ayudaCarrusel">Deslizá para conocer a los diez speakers.</p>
           <div
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 g-4"
+            class="speakers-carrusel row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 g-4"
+            role="region"
+            aria-label="Speakers y sus charlas"
+            tabindex="0"
           >
             <div class="col">
               <article class="speaker-card">
@@ -1103,24 +1107,5 @@
 
     </footer>
 
-    <script>
-      const sponsorForm = document.querySelector("#sponsor-form");
-      const sponsorMaterial = document.querySelector("#material-sponsor");
-      const sponsorMaterialName = document.querySelector(
-        "#material-sponsor-name",
-      );
-
-      sponsorMaterial.addEventListener("change", () => {
-        sponsorMaterialName.textContent =
-          sponsorMaterial.files[0]?.name ?? "Seleccioná el archivo de tu empresa";
-      });
-
-      sponsorForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-        sponsorForm.querySelector(".sponsor-form__status").textContent =
-          "Verificación correcta. Todos los campos están completos.";
-      });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
