@@ -920,3 +920,35 @@ nav.navegacion-principal .nav-link.active {
   width: 100%;
   border-radius: 28px;
 }
+
+.logo-social-rolling-img {
+  top: 0.5px;
+  left: 20px;
+  width: clamp(150px, 18vw, 210px);
+  height: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .bloque-section-footer {
+    width: 100%;
+    gap: 24px;
+    padding: 25px 0;
+  }
+
+  .bloque-iconos-footer {
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  .bloque-section-footer {
+    width: 95%;
+    gap: 24px;
+  }
+
+  .bloque-iconos-footer {
+    gap: 12px;
+  }
+}
