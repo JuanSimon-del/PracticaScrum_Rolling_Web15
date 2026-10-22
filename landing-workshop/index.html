@@ -555,7 +555,12 @@
                   />
                 </div>
 
-                <button type="button" class="finalizarCompra-continuar">
+                <button
+                  type="button"
+                  class="finalizarCompra-continuar"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalDatos"
+                >
                   Continuar
                 </button>
 
@@ -601,6 +606,75 @@
           </div>
         </div>
       </section>
+
+      <div class="modal fade" id="modalDatos" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal-rc-content">
+            <div class="modal-header border-0 pb-0">
+              <h5 class="modal-title fw-bold fs-4">2 - Tus Datos</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body border-0 pt-3">
+              <form>
+                <div class="mb-3">
+                  <label for="nombreUsuario" class="form-label fw-bold small"
+                    >Nombre completo:
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control modal-rc-input px-3"
+                    id="nombreUsuario"
+                    required
+                    maxlength="15"
+                    minlength="4"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="dniUsuario" class="form-label fw-bold small"
+                    >DNI:
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control modal-rc-input px-3"
+                    id="dniUsuario"
+                    required
+                    maxlength="8"
+                    inputmode="numeric"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="emailUsuario" class="form-label fw-bold small"
+                    >Email:
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control modal-rc-input px-3"
+                    id="emailUsuario"
+                    required
+                    maxlength="15"
+                    minlength="4"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer border-0 pt-0">
+              <button
+                type="button"
+                class="finalizarCompra-continuar w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPago"
+              >
+                Continuar al Pago
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="mt-5 pt-4 pb-5 border-top border-secondary">
