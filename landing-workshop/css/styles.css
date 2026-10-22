@@ -688,3 +688,245 @@
   font-weight: 400;
   line-height: 1.4;
 }
+
+/* Estilos para Sponsors */
+
+.sponsors-section {
+  width: 100%;
+  margin-block: 96px;
+}
+
+.sponsors-etiqueta {
+  margin-bottom: 12px;
+  color: var(--rc-red);
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.sponsors-titulo {
+  margin-bottom: 32px;
+  font-size: clamp(34px, 4.5vw, 56px);
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.sponsors-nivel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--rc-red);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.sponsors-tarjeta {
+  background-color: var(--rc-surface);
+  color: var(--rc-white);
+  border: 1px solid var(--rc-red);
+  border-radius: 32px;
+  transition: box-shadow 0.2s ease;
+}
+
+@media (hover: hover) {
+  .sponsors-tarjeta:hover {
+    box-shadow: 0 0 24px -8px var(--sponsor-acento, var(--rc-red));
+  }
+}
+
+.sponsors-categoria {
+  align-self: flex-start;
+  color: var(--rc-red);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.sponsors-logo {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 24px auto;
+  object-fit: contain;
+  padding: 12px;
+  border: 1px solid var(--rc-border);
+  border-radius: 24px;
+  background-color: var(--rc-surface-2);
+}
+
+.sponsors-nombre {
+  margin-bottom: 12px;
+  font-size: 26px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.sponsors-descripcion {
+  color: var(--rc-text-soft);
+  line-height: 1.55;
+  text-align: center;
+  font-weight: 400;
+}
+
+.sponsors-pie {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid var(--rc-border);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--rc-text-soft);
+}
+
+.sponsors-iconoNivel,
+.sponsors-pie img {
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Main partner accents */
+.sponsors-tarjeta--google {
+  --sponsor-acento: var(--rc-red);
+}
+
+.sponsors-tarjeta--aws {
+  --sponsor-acento: #e99743;
+}
+
+.sponsors-tarjeta--mercadoLibre {
+  --sponsor-acento: #ffe04b;
+}
+
+.sponsors-tarjeta--google,
+.sponsors-tarjeta--aws,
+.sponsors-tarjeta--mercadoLibre {
+  border-color: var(--sponsor-acento);
+}
+
+.sponsors-tarjeta .sponsors-categoria {
+  margin-bottom: 0;
+  padding: 6px 12px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  color: var(--sponsor-acento, var(--rc-red));
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.sponsors-tarjeta .sponsors-logo {
+  max-width: 100%;
+}
+
+/* Gold and Bronze sponsor tiers */
+.sponsors-grupo {
+  margin-top: 64px;
+}
+
+.sponsors-grupo--oro {
+  --sponsor-acento: #f5c344;
+}
+
+.sponsors-grupo--bronce {
+  --sponsor-acento: #e99743;
+}
+
+.sponsors-grupo .sponsors-nivel {
+  color: var(--sponsor-acento);
+  text-transform: uppercase;
+}
+
+.sponsors-nivelEtiqueta {
+  padding: 6px 10px;
+  border: 1px solid var(--sponsor-acento);
+  border-radius: 6px;
+  color: var(--sponsor-acento);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: var(--rc-surface-2);
+}
+
+.sponsors-descripcionNivel {
+  color: var(--rc-text-mute);
+  font-weight: 400;
+}
+
+.sponsors-tarjeta--oro {
+  border-color: #66542c;
+  border-radius: 24px;
+  min-height: 240px;
+}
+
+.sponsors-tarjeta--bronce {
+  border-color: var(--rc-border);
+  border-radius: 18px;
+  min-height: 160px;
+}
+
+.sponsors-tarjeta--oro .sponsors-logo {
+  width: 72px;
+  height: 72px;
+  margin: 8px auto 16px;
+  padding: 10px;
+  border-radius: 18px;
+}
+
+.sponsors-tarjeta--bronce .sponsors-logo {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 12px;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.sponsors-tarjeta--oro .sponsors-nombre {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.sponsors-tarjeta--bronce .sponsors-nombre {
+  font-size: 16px;
+  margin-bottom: 6px;
+  overflow-wrap: anywhere;
+}
+
+.sponsors-tarjeta--oro .sponsors-descripcion,
+.sponsors-tarjeta--bronce .sponsors-descripcion {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--rc-text-mute);
+}
+
+.sponsors-tarjeta--bronce .sponsors-descripcion {
+  margin-bottom: 0;
+}
+
+.sponsors-insignia {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: #292414;
+  color: var(--sponsor-acento);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  .sponsors-grilla--bronce > .col {
+    width: calc(100% / 7);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .sponsors-section {
+    margin-block: 48px;
+  }
+
+  .sponsors-section > .container {
+    padding-inline: 24px;
+  }
+
+  .sponsors-grupo {
+    margin-top: 40px;
+  }
+}
