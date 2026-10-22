@@ -908,3 +908,15 @@ nav.navegacion-principal .nav-link.active {
     gap: 12px;
   }
 }
+.mapa-contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.mapa-contenedor iframe {
+  width: 100%;
+  border-radius: 28px;
+}
