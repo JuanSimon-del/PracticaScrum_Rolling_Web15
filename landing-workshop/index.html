@@ -73,7 +73,6 @@
                 </button>
               </div>
             </div>
-
             <div class="col-lg-5 mt-5 mt-lg-0">
               <div class="card card_agenda p-4">
                 <div class="card-body">
@@ -463,7 +462,130 @@
           </div>
         </div>
       </section>
-  <div
+      <section class="container sponsor-section my-5">
+        <header class="sponsor-section__header">
+          <h2 class="sponsor-section__title text-center">Sumate como sponsor</h2>
+          <p class="sponsor-section__subtitle text-center">
+            Contactá tu marca más de 120 talentos IT, programadores junior, semi seniors y lideres tecnológicos del norte argentino. Completá el formulario y nos contactaremos en menos de 24 horas hábiles
+          </p>
+        </header>
+        <div class="card sponsor-card">
+          <div class="card-body">
+            <form class="sponsor-form" id="sponsor-form">
+              <div class="row g-4">
+                <div class="col-12 col-md-6">
+                  <label class="form-label form-label--required" for="nombre">NOMBRE</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ej: Martin"
+                    autocomplete="given-name"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label form-label--required" for="apellido">APELLIDO</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="apellido"
+                    name="apellido"
+                    placeholder="Ej. Gonzales"
+                    autocomplete="family-name"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label form-label--required" for="empresa">EMPRESA</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="empresa"
+                    name="empresa"
+                    placeholder="Ej:Acme Technologies"
+                    autocomplete="organization"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label form-label--required" for="email">EMAIL CORPORATIVO</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Ej: martin@acme.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label class="form-label form-label--required" for="tipo-sponsor">TIPO DE ESPONSOR</label>
+                  <select
+                    class="form-select"
+                    id="tipo-sponsor"
+                    name="tipoSponsor"
+                    required
+                  >
+                    <option value="" selected disabled hidden>Selecciona un nivel de sponsoreo</option>
+                    <option value="main-partners">MAIN PARTNERS (NIVEL DIAMANTE)</option>
+                    <option value="gold-tier">GOLD TIER (NIVEL ORO)</option>
+                    <option value="bronze-tier">BRONZE TIER (NIVEL BRONCE)</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <span class="form-label">LOGO DE LA EMPRESA</span>
+                  <label class="sponsor-form__upload" for="material-sponsor">
+                    <a href="#" role="button">
+                      <i class="bi bi-cloud-upload"></i>
+                    </a>
+                    <span
+                      class="sponsor-form__upload-text"
+                      id="material-sponsor-name"
+                    >
+                      Hacé clic para adjuntar tu logo o arrastralo aquí
+                    </span>
+                    <span class="sponsor-form__upload-hint">
+                      Archivos aceptados: PNG,SVG, JPG o WEBP(fondo transparente recomendado, máx 5mb)
+                    </span>
+                    <input
+                      type="file"
+                      class="sponsor-form__file"
+                      id="material-sponsor"
+                      name="materialSponsor"
+                      aria-describedby="material-sponsor-name"
+                      required
+                    />
+                  </label>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="propuesta-sponsor">
+                    MENSAJE OPCIONAL
+                  </label>
+                  <textarea
+                    class="form-control sponsor-form__textarea"
+                    id="propuesta-sponsor"
+                    name="propuestaSponsor"
+                    rows="5"
+                    placeholder="Contanos sobre tu empresa y porque buscas ser Sponsor del evento"
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                <button type="submit" class="sponsor-form__submit">
+                         <i class="bi bi-send"></i>
+                           Enviar postulación de Sponsor
+                          </button>
+                  <p class="sponsor-form__status" aria-live="polite"></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
       <div class="container fw-bold">
         <p></p>
       </div>
@@ -981,8 +1103,27 @@
           </div>
         </section>
       </div>
+
     </footer>
 
+    <script>
+      const sponsorForm = document.querySelector("#sponsor-form");
+      const sponsorMaterial = document.querySelector("#material-sponsor");
+      const sponsorMaterialName = document.querySelector(
+        "#material-sponsor-name",
+      );
+
+      sponsorMaterial.addEventListener("change", () => {
+        sponsorMaterialName.textContent =
+          sponsorMaterial.files[0]?.name ?? "Seleccioná el archivo de tu empresa";
+      });
+
+      sponsorForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        sponsorForm.querySelector(".sponsor-form__status").textContent =
+          "Verificación correcta. Todos los campos están completos.";
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
