@@ -700,32 +700,25 @@
 
 @media screen and (max-width: 800px) {
   .bloque-section-footer {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    padding: 35px 0;
+    width: 100%;
+    gap: 24px;
+    padding: 25px 0;
   }
 
   .bloque-iconos-footer {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    padding: 35px 0;
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
   }
 }
 
 @media screen and (min-width: 801px) and (max-width: 1200px) {
   .bloque-section-footer {
-    width: 90%;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 35px 0;
+    width: 95%;
+    gap: 24px;
   }
 
   .bloque-iconos-footer {
-    width: 90%;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 35px 0;
+    gap: 12px;
   }
 }
