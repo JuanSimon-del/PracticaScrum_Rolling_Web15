@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Principal</title>
+    <title>Workshop | Rolling Code School</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,800&display=swap"
       rel="stylesheet"
@@ -20,7 +20,27 @@
   </head>
 
   <body>
-    <title>Workshop | Rolling Code School</title>
+    <img
+      class="logo-esquina"
+      src="./img/logo-rolling-blanco.png"
+      alt="Rolling Code School"
+    />
+    <nav class="navegacion-principal">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="true" href="#">Speakers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Agenda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cómo llegar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-disabled="page">Comprar entrada</a>
+        </li>
+      </ul>
+    </nav>
     <main>
       <section class="bloque_hero my-4 mx-auto">
         <div class="container custom-container">
@@ -345,19 +365,131 @@
           </div>
         </div>
       </section>
+      <section class="container bloque-agregado my-4">
+        <div class="row g-4 justify-content-center">
+          <div class="card agenda col-12 col-md-6">
+            <div class="card h-100">
+              <div class="card-body text-center bloque-agregado-izquierda">
+                <h1 class="card-title fw-bold">jueves 19 de noviembre</h1>
+                <p class="card-text">
+                  Diez charlas cortas para salir con un plan claro.
+                </p>
+                <p class="card-text">
+                  Al final de cada charla queda tiempo para preguntas.
+                </p>
+                <p class="card-text">Networking.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card h-100">
+              <div class="card-body text-start bloque-agregado-derecha">
+                <div class="subdivisiones-derecha">
+                  <div>
+                    <p>
+                      <span class="hora">18:00</span>
+                      <span class="evento">Acreditación y bienvenida </span>
+                    </p>
+                  </div>
+                  <div>
+                    <p>
+                      <span class="hora">18:20</span>
+                      <span class="evento">Tu primer día como developer</span>
+                    </p>
+                    <p class="subtexto-agenda">Danieal Cardozo</p>
+                  </div>
+                  <div>
+                    <p>
+                      <span class="hora">18:40</span>
+                      <span class="evento">De cero a tu primer proyecto</span>
+                    </p>
+                    <p class="subtexto-agenda">Franco Diaz</p>
+                  </div>
+                  <div>
+                    <p>
+                      <span class="hora">19:00</span>
+                      <span class="evento">Armá tu portafolio con IA</span>
+                    </p>
+                    <p class="subtexto-agenda">Gaston</p>
+                  </div>
+                  <div>
+                    <p>
+                      <span class="hora">19:20</span>
+                      <span class="evento">Git y GitHub sin miedo</span>
+                    </p>
+                    <p class="subtexto-agenda">Mauro</p>
+                  </div>
+                  <div>
+                    <p>
+                      <span class="hora">19:40</span>
+                      <span class="evento">Tu primer backend con Node</span>
+                    </p>
+                    <p class="subtexto-agenda">Jose Diaz</p>
+                  </div>
+                  <div>
+                    <p>
+                      <span class="hora">20:00</span>
+                      <span class="evento"
+                        >Preparate para tu primera entrevista</span
+                      >
+                    </p>
+                    <p class="subtexto-agenda">Tomas Gomez</p>
+                  </div>
+                  <div>
+                    <p>
+                      <span class="hora">20:20</span>
+                      <span class="evento">Mi primer trabajo en IT</span>
+                    </p>
+                    <p class="subtexto-agenda">Pablo Bassco</p>
+                  </div>
+                  <div>
+                    <p>
+                      <span class="hora">20:40</span>
+                      <span class="evento">Testing: cómo no romper todo</span>
+                    </p>
+                    <p class="subtexto-agenda">Julian Martin</p>
+                  </div>
+                  <div>
+                    <p>
+                      <span class="hora">21:00</span>
+                      <span class="evento">Diseño para developers</span>
+                    </p>
+                    <p class="subtexto-agenda">Julian Martin</p>
+                  </div>
+                  <div>
+                    <p>
+                      <span class="hora">21:20</span>
+                      <span class="evento">Tu primera base de datos</span>
+                    </p>
+                    <p class="subtexto-agenda">Tomas Escudero</p>
+                  </div>
+                  <div>
+                    <p>
+                      <span class="hora">21:40</span>
+                      <span class="evento">Preguntas y networking</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="container fw-bold">
         <p></p>
       </div>
+
       <div
         class="contenedor container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center"
       >
-        <!-- SECCIÓN 3: TARJETAS DE ENTRADAS -->
         <section class="tarjeta mb-5 text-white">
           <div class="mb-4">
             <span
               class="text-danger-custom text-uppercase fw-bold small tracking-wider"
-              ><p>Entradas</p></span
             >
+              <p>Entradas</p>
+            </span>
             <h1 class="fw-bold mt-1 text-white">
               Asegurá tu lugar antes de que suba el precio
             </h1>
@@ -404,7 +536,6 @@
               </div>
             </section>
             <div class="row g-4">
-              <!-- Tarjeta 1: Early Bird -->
               <div class="tarjeta-pri d-flex col-12 col-md-6">
                 <div class="card card-custom p-4 position-relative">
                   <span
@@ -434,7 +565,6 @@
                 </div>
               </div>
 
-              <!-- Tarjeta 2: General -->
               <div class="tarjeta col-12 col-md-6">
                 <div class="card card-custom p-4 position-relative">
                   <span
@@ -490,6 +620,7 @@
           </div>
         </section>
       </div>
+
       <!-- Inicio de Sección de Finalizar Compra -->
       <section id="fC" class="finalizarCompra-section">
         <div class="container">
@@ -497,8 +628,13 @@
             <p class="finalizarCompra-label">Compra segura</p>
             <div class="finalizarCompra-titulo-etapas">
               <h2 class="finalizarCompra-title">Finalizá tu compra</h2>
-              <ol class="finalizarCompra-etapas">
-                <li class="finalizarCompra-etapa-actual">1 - Entrada</li>
+              <p class="finalizarCompra-progresoMobile">
+                Paso 1 de 4 · Entrada
+              </p>
+              <ol class="finalizarCompra-etapas" aria-label="Etapas de compra">
+                <li class="finalizarCompra-etapa-actual" aria-current="step">
+                  1 Entrada
+                </li>
                 <li>2 Datos</li>
                 <li>3 Pago</li>
                 <li>4 Listo</li>
@@ -520,30 +656,54 @@
                     />
                     <span>
                       <strong>Early Bird</strong>
-                      <small>Presencial - hasta el 31/10</small>
+                      <small>Presencial · hasta el 31/10</small>
+                      <span
+                        class="finalizarCompra-seleccionada"
+                        aria-hidden="true"
+                        >Seleccionada</span
+                      >
                     </span>
-                    <span>$25.000</span>
+                    <span class="finalizarCompra-precio"
+                      >$25.000<small>por entrada</small></span
+                    >
                   </label>
                   <label class="finalizarCompra-opcion">
                     <input type="radio" name="entrada" value="general" />
                     <span>
                       <strong>General</strong>
-                      <small>Presencial - desde el 01/11</small>
+                      <small>Presencial · desde el 01/11</small>
+                      <span
+                        class="finalizarCompra-seleccionada"
+                        aria-hidden="true"
+                        >Seleccionada</span
+                      >
                     </span>
-                    <span>$35.000</span>
+                    <span class="finalizarCompra-precio"
+                      >$35.000<small>por entrada</small></span
+                    >
                   </label>
                   <label class="finalizarCompra-opcion">
                     <input type="radio" name="entrada" value="online" />
                     <span>
                       <strong>Virtual</strong>
-                      <small>Transmisión en vivo y grabación</small>
+                      <small>Virtual · transmisión en vivo y grabación</small>
+                      <span
+                        class="finalizarCompra-seleccionada"
+                        aria-hidden="true"
+                        >Seleccionada</span
+                      >
                     </span>
-                    <span>$15.000</span>
+                    <span class="finalizarCompra-precio"
+                      >$15.000<small>por entrada</small></span
+                    >
                   </label>
                 </fieldset>
 
                 <div class="finalizarCompra-cantidad">
-                  <label for="cantidadEntradas">Cantidad: </label>
+                  <div class="finalizarCompra-contextoCantidad">
+                    <label for="cantidadEntradas">Cantidad de entradas</label>
+                    <small id="ayudaCantidadEntradas">Mínimo 1 entrada.</small>
+                  </div>
                   <input
                     type="number"
                     id="cantidadEntradas"
@@ -551,18 +711,14 @@
                     min="1"
                     step="1"
                     value="1"
+                    aria-describedby="ayudaCantidadEntradas"
                     required
                   />
                 </div>
 
-                <button
-                  type="button"
-                  class="finalizarCompra-continuar"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modalDatos"
-                >
+                <a href="./404.html" class="finalizarCompra-continuar">
                   Continuar
-                </button>
+                </a>
 
                 <p class="finalizarCompra-aclaracion">
                   Pasarela de pago de ejemplo: No se procesan pagos ni se
@@ -790,7 +946,24 @@
               height="32"
               class="logo-social-rolling"
             />
-            <p>Calle Gral. Paz 576, Entrepiso</p>
+            <p class="mb-0 fw-bold fs-5">Calle Gral. Paz 576, Entrepiso</p>
+            <p class="mb-0 text-secondary">
+              4000 San Miguel de Tucumán, Tucumán
+            </p>
+
+            <div class="d-flex gap-2 flex-wrap mt-4">
+              <span
+                class="badge rounded-pill bg-dark border border-secondary px-3 py-2 fw-normal"
+                >Jueves 19/11</span
+              >
+              <span
+                class="badge rounded-pill bg-dark border border-secondary px-3 py-2 fw-normal"
+                >18.00 hs</span
+              >
+              <span class="badge rounded-pill bg-danger px-3 py-2 fw-normal"
+                >Entrepiso</span
+              >
+            </div>
           </div>
         </div>
       </section>
