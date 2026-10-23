@@ -40,7 +40,7 @@
             <a class="nav-link" href="#agenda">Agenda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#ubicacion">Cómo llegar</a>
+            <a class="nav-link" href="#como-llegar">Cómo llegar</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#fC">Comprar entrada</a>
@@ -75,7 +75,7 @@
                     Comprar entrada
                   </button>
                 </form>
-                <form action="./404.html" method="get" class="d-inline">
+                <form action="./index.html#agenda" method="get" class="d-inline">
                   <button class="btn btn-outline-light rounded-pill px-4">
                     Ver agenda
                   </button>
@@ -102,7 +102,7 @@
 
                   <hr class="border-secondary" />
 
-                  <div id="ubicacion" class="d-flex align-items-center mb-4">
+                  <div class="d-flex align-items-center mb-4">
                     <img
                       src="./img/iconos/candado.svg"
                       alt="Ubicación"
@@ -497,7 +497,6 @@
       <div
         class="contenedor container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center"
       >
-        <!-- SECCIÓN 3: TARJETAS DE ENTRADAS -->
         <section class="tarjeta mb-5 text-white">
           <div class="mb-4">
             <span
@@ -550,7 +549,6 @@
               </div>
             </section>
             <div class="row g-4">
-              <!-- Tarjeta 1: Early Bird -->
               <div class="tarjeta-pri d-flex col-12 col-md-6">
                 <div class="card card-custom p-4 position-relative">
                   <span
@@ -582,7 +580,6 @@
                 </div>
               </div>
 
-              <!-- Tarjeta 2: General -->
               <div class="tarjeta col-12 col-md-6">
                 <div class="card card-custom p-4 position-relative">
                   <span
@@ -642,7 +639,6 @@
           </div>
         </section>
       </div>
-      <!-- Inicio de Sección de Finalizar Compra -->
       <section id="fC" class="finalizarCompra-section">
         <div class="container">
           <header class="finalizarCompra-header">
@@ -707,15 +703,9 @@
                   />
                 </div>
 
-                <button
-                  type="submit"
-                  formaction="./404.html"
-                  formmethod="get"
-                  formnovalidate
-                  class="finalizarCompra-continuar"
-                >
+                <a class="finalizarCompra-continuar" href="#modalDatosPago">
                   Continuar
-                </button>
+                </a>
 
                 <p class="finalizarCompra-aclaracion">
                   Pasarela de pago de ejemplo: No se procesan pagos ni se
@@ -760,22 +750,41 @@
         </div>
       </section>
 
-      <div class="modal fade" id="modalDatosPago" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content modal-rc-content">
+      <div
+        id="modalDatosPago"
+        class="pago-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="pagoModalTitulo"
+        tabindex="-1"
+      >
+        <a
+          class="pago-modal__fondo"
+          href="#fC"
+          aria-label="Cerrar ventana de datos y pago"
+        ></a>
+        <div class="pago-modal__dialog">
+          <section class="modal-content modal-rc-content pago-modal__contenido">
             <div class="modal-header border-0 pb-0">
-              <h5 class="modal-title fw-bold fs-4">2 - Datos y Pago</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+              <h2 id="pagoModalTitulo" class="modal-title fw-bold fs-4">
+                2 - Datos y Pago
+              </h2>
+              <a
+                class="btn-close pago-modal__cerrar"
+                href="#fC"
+                aria-label="Cerrar ventana"
+              ></a>
             </div>
             <div class="modal-body border-0 pt-3">
-              <form class="form-validacion">
+              <form
+                class="form-validacion"
+                action="#modalCompraExitosa"
+                method="get"
+              >
                 <div class="mb-3">
-                  <label for="nombreUsuario" class="form-label fw-bold small"
+                  <label
+                    for="nombreUsuario"
+                    class="form-label fw-bold small"
                     >Nombre completo:</label
                   >
                   <input
@@ -866,12 +875,10 @@
 
                 <div class="modal-footer border-0 pt-0 mt-2">
                   <button
-                    type="button"
+                    type="submit"
                     class="finalizarCompra-continuar"
-                    data-bs-toggle="modal"
-                    data-bs-target="#modalDatosPago"
                   >
-                    Continuar
+                    Confirmar Pago
                   </button>
                 </div>
               </form>
@@ -880,9 +887,34 @@
         </div>
       </div>
 
+      <div
+        id="modalCompraExitosa"
+        class="pago-modal pago-modal--exito"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="compraExitosaTitulo"
+        tabindex="-1"
+      >
+        <a
+          class="pago-modal__fondo"
+          href="#fC"
+          aria-label="Cerrar confirmación de compra"
+        ></a>
+        <div class="pago-modal__dialog">
+          <section
+            class="modal-content pago-modal__contenido pago-modal__contenido--exito"
+          >
+            <div class="pago-modal__check" aria-hidden="true">✓</div>
+            <h2 id="compraExitosaTitulo">¡Compra exitosa!</h2>
+            <p>Entrada enviada a tu email.</p>
+            <a class="pago-modal__entendido" href="#fC">Entendido</a>
+          </section>
+        </div>
+      </div>
+
       <section id="como-llegar" class="tarjeta mb-5 py-5 text-white">
         <div class="container custom-container">
-          <div class="row align-items-center g-5">
+          <div class="row align-items-center g-4">
             <div class="col-lg-6">
               <p
                 class="text-danger-custom text-uppercase fw-bold small tracking-wider mb-2"
@@ -946,11 +978,13 @@
               </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 mapa-contenedor">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1236597814645!2d-65.20959862463998!3d-26.83601889000356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0ef4c82ae3%3A0x14c5e9aa0d5e5643!2sGral.%20Jos%C3%A9%20Mar%C3%ADa%20Paz%20579%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1792693216560!5m2!1ses-419!2sar"
                 width="600"
                 height="450"
+                title="Mapa de Rolling Code School en San Miguel de Tucumán"
+                loading="lazy"
               ></iframe>
             </div>
           </div>
