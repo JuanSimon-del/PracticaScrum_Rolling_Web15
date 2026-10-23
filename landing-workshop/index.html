@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workshop | Rolling Code School</title>
+    <title>Principal</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,800&display=swap"
       rel="stylesheet"
@@ -18,32 +18,9 @@
     />
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
+
   <body>
-    <header class="site-header container custom-container">
-      <a class="site-header__brand" href="#" aria-label="Rolling Code School, inicio">
-        <img
-          src="./img/logo-rolling-blanco.png"
-          alt="Rolling Code School"
-          class="site-header__logo"
-        />
-      </a>
-      <nav class="navegacion-principal" aria-label="Navegación principal">
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="#speakers">Speakers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#agenda">Agenda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#ubicacion">Cómo llegar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#fC">Comprar entrada</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <title>Workshop | Rolling Code School</title>
     <main>
       <section class="bloque_hero my-4 mx-auto">
         <div class="container custom-container">
@@ -66,18 +43,15 @@
               </p>
 
               <div class="d-flex gap-3 mb-3">
-                <form action="./404.html" method="get" class="d-inline">
-                  <button class="btn btn-outline-light rounded-pill px-4">
-                    Comprar entrada
-                  </button>
-                </form>
-                <form action="./404.html" method="get" class="d-inline">
-                  <button class="btn btn-outline-light rounded-pill px-4">
-                    Ver agenda
-                  </button>
-                </form>
+                <button class="btn btn-outline-light rounded-pill px-4">
+                  Comprar entrada
+                </button>
+                <button class="btn btn-outline-light rounded-pill px-4">
+                  Ver agenda
+                </button>
               </div>
             </div>
+
             <div class="col-lg-5 mt-5 mt-lg-0">
               <div class="card card_agenda p-4">
                 <div class="card-body">
@@ -98,7 +72,7 @@
 
                   <hr class="border-secondary" />
 
-                  <div id="ubicacion" class="d-flex align-items-center mb-4">
+                  <div class="d-flex align-items-center mb-4">
                     <img
                       src="./img/iconos/candado.svg"
                       alt="Ubicación"
@@ -151,16 +125,70 @@
         </div>
       </section>
 
+      <section class="container my-5">
+        <div class="card card-estadisticas p-4 p-md-5">
+          <div class="row text-center text-md-start g-4">
+            <div class="col-6 col-lg-3">
+              <div class="estadistica-item">
+                <figure class="mb-0">
+                  <blockquote class="blockquote mb-0">
+                    <h3 class="estadistica-numero">120</h3>
+                  </blockquote>
+                  <figcaption class="estadistica-texto mb-0">
+                    lugares presenciales
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+              <div class="estadistica-item">
+                <figure class="mb-0">
+                  <blockquote class="blockquote mb-0">
+                    <h3 class="estadistica-numero">10</h3>
+                  </blockquote>
+                  <figcaption class="estadistica-texto mb-0">
+                    charlas de speakers
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+              <div class="estadistica-item">
+                <figure class="mb-0">
+                  <blockquote class="blockquote mb-0">
+                    <h3 class="estadistica-numero">3 h 40</h3>
+                  </blockquote>
+                  <figcaption class="estadistica-texto mb-0">
+                    de 18.00 a 21.40 hs
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+              <div class="estadistica-item">
+                <figure class="mb-0">
+                  <blockquote class="blockquote mb-0">
+                    <h3 class="estadistica-numero">2</h3>
+                  </blockquote>
+                  <figcaption class="estadistica-texto mb-0">
+                    modalidades: presencial y virtual
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="speakers" class="speakers-section">
         <div class="container">
           <p class="speakers-label">SPEAKERS</p>
           <h2 class="speakers-title">Diez charlas, un mismo objetivo</h2>
-          <p class="speakers-ayudaCarrusel">Deslizá para conocer a los diez speakers.</p>
           <div
-            class="speakers-carrusel row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 g-4"
-            role="region"
-            aria-label="Speakers y sus charlas"
-            tabindex="0"
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 g-4"
           >
             <div class="col">
               <article class="speaker-card">
@@ -188,7 +216,7 @@
                 <p class="speaker-card__talk">De cero a tu primer proyecto</p>
                 <p class="speaker-card__description">
                   Un recorrido para pasar de mirar tutoriales a terminar una app
-                  web simple.
+                  simple con HTML, JavaScript y React.
                 </p>
               </article>
             </div>
@@ -317,102 +345,6 @@
           </div>
         </div>
       </section>
-      <section id="agenda" class="container bloque-agregado my-4">
-        <div class="row g-4 justify-content-center">
-          <div class="card agenda col-12 col-md-6">
-            <div class="card h-100">
-              <div class="card-body text-center bloque-agregado-izquierda">
-                <h1 class="card-title fw-bold ">jueves 19 de noviembre</h1>
-                <p class="card-text">
-                  Diez charlas cortas para salir con un plan claro.
-                </p>
-                <p class="card-text">
-                  Al final de cada charla queda tiempo para preguntas.
-                </p>
-                <p class="card-text">
-                  Networking.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="card h-100">
-              <div class="card-body text-start bloque-agregado-derecha">
-                <div class="subdivisiones-derecha">
-                  <div><p>
-                      <span class="hora">18:00</span>
-                        <span class="evento">Acreditación y bienvenida </span>
-                        </p>
-                  </div>
-                  <div><p>
-                      <span class="hora">18:20</span>
-                        <span class="evento">Tu primer día como developer</span>
-                        </p>
-                        <p class="subtexto-agenda">Daniela Cardozo</p>
-                  </div>
-                  <div><p>
-                      <span class="hora">18:40</span>
-                        <span class="evento">De cero a tu primer proyecto</span>
-                        </p>
-                        <p class="subtexto-agenda">Franco Diaz</p>
-                  </div>
-                  <div><p>
-                      <span class="hora">19:00</span>
-                        <span class="evento">Armá tu portafolio con IA</span>
-                        </p>
-                        <p class="subtexto-agenda">Gaston</p>
-                  </div>
-                  <div><p>
-                      <span class="hora">19:20</span>
-                        <span class="evento">Git y GitHub sin miedo</span>
-                        </p>
-                        <p class="subtexto-agenda">Mauro</p>
-                  </div>
-                  <div><p>
-                      <span class="hora">19:40</span>
-                        <span class="evento">Tu primer backend con Node</span>
-                        </p>
-                        <p class="subtexto-agenda">Jose Diaz</p>
-                  </div>
-                  <div><p>
-                      <span class="hora">20:00</span>
-                        <span class="evento">Preparate para tu primera entrevista</span>
-                        </p>
-                        <p class="subtexto-agenda">Tomas Gomez</p>
-                  </div>
-                  <div><p>
-                      <span class="hora">20:20</span>
-                        <span class="evento">Mi primer trabajo en IT</span>
-                        </p>
-                        <p class="subtexto-agenda">Pablo Basso</p>
-                  </div>
-                  <div><p>
-                      <span class="hora">20:40</span>
-                        <span class="evento">Testing: cómo no romper todo</span>
-                        </p>
-                        <p class="subtexto-agenda">Julian Martin</p>
-                  </div>
-                  <div><p>
-                      <span class="hora">21:00</span>
-                        <span class="evento">Diseño para developers</span>
-                        </p>
-                        <p class="subtexto-agenda">Tomas Escudero</p>
-                  </div>
-                  <div><p>
-                      <span class="hora">21:20</span>
-                        <span class="evento">Tu primera base de datos</span>
-                        </p>
-                        <p class="subtexto-agenda">Andres Perlo</p>
-                  </div>
-                  <div><p>
-                      <span class="hora">21:40</span>
-                        <span class="evento">Preguntas y networking</span>
-                        </p>
-                </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <div class="container fw-bold">
         <p></p>
       </div>
@@ -485,14 +417,11 @@
                     <h3 class="card-title price fw-bold mb-0 text-white">
                       $25.000
                     </h3>
-                    <span
-                      class=" text-secundary ms-2 small"
-                      >$35.000</span
-                    >
+                    <span class="text-secundary ms-2 small">$35.000</span>
                   </div>
 
                   <ul class="list-unstyled custom-list mb-4">
-                    <p class="small opacity-75 mb-4">
+                    <p class="small opacity-75 mb-4 text-nowrap">
                       Presencial - precio especial hasta el 31/10
                     </p>
                     <p>Acceso a las 10 charlas</p>
@@ -501,9 +430,7 @@
                     <p>Coffee break y networking con los speakers</p>
                     <p>Grabación de todas las charlas</p>
                   </ul>
-                  <form action="./404.html" method="get">
-                    <button class="btn-pri fw-bold">Comprar entrada</button>
-                  </form>
+                  <button class="btn-pri fw-bold">Comprar entrada</button>
                 </div>
               </div>
 
@@ -529,11 +456,9 @@
                       <p>Coffee break y networking con los speakers</p>
                       <p>Grabación de todas las charlas</p>
                     </ul>
-                    <form action="./404.html" method="get">
-                      <button class="btn-general fw-bold mt-auto">
-                        Comprar entrada
-                      </button>
-                    </form>
+                    <button class="btn-general fw-bold mt-auto">
+                      Comprar entrada
+                    </button>
                   </div>
                 </div>
               </div>
@@ -556,11 +481,9 @@
                     <p>Certificado de asistencia</p>
                     <p>Grabación disponible por 30 días</p>
                   </ul>
-                  <form action="./404.html" method="get">
-                    <button class="btn-virtual w-100 fw-bold py-2">
-                      Comprar entrada
-                    </button>
-                  </form>
+                  <button class="btn-virtual w-100 fw-bold py-2">
+                    Comprar entrada
+                  </button>
                 </div>
               </div>
             </div>
@@ -632,13 +555,7 @@
                   />
                 </div>
 
-                <button
-                  type="submit"
-                  formaction="./404.html"
-                  formmethod="get"
-                  formnovalidate
-                  class="finalizarCompra-continuar"
-                >
+                <button type="button" class="finalizarCompra-continuar">
                   Continuar
                 </button>
 
@@ -689,17 +606,29 @@
     <footer class="mt-5 pt-4 pb-5 border-top border-secondary">
       <div class="container custom-container">
         <section
-          class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4"
+          class="bloque-section-footer d-flex flex-column flex-md-row justify-content-between align-items-center gap-4"
         >
           <div class="logo-social-rolling">
             <img
               src="./img/logo-rolling-blanco.png"
               alt="Rolling Code School"
               height="32"
+              class="logo-social-rolling-img"
             />
+            <p>RollingCode © 2026</p>
           </div>
 
-          <div class="red-social d-flex gap-3 flex-wrap justify-content-center">
+          <div
+            class="bloque-iconos-footer red-social d-flex gap-3 flex-wrap justify-content-center"
+          >
+            <a
+              href="https://api.whatsapp.com/send/?phone=5493815783030&text&type=phone_number&app_absent=0"
+              class="icono-red-social"
+              target="_blank"
+            >
+              <i class="bi bi-whatsapp"></i>
+            </a>
+
             <a
               href="https://www.instagram.com/rollingcodeschool"
               class="icono-red-social"
@@ -736,7 +665,7 @@
                 height="20"
               />
             </a>
-            <a href="#" class="icono-red-social">
+            <a href="404.html" class="icono-red-social">
               <img
                 src="./img/iconos/youtube.svg"
                 alt="YouTube"
@@ -751,7 +680,7 @@
             >
               <img src="./img/iconos/x.svg" alt="X" width="20" height="20" />
             </a>
-            <a href="#" class="icono-red-social">
+            <a href="404.html" class="icono-red-social">
               <img
                 src="./img/iconos/github.svg"
                 alt="GitHub"
@@ -762,8 +691,8 @@
           </div>
         </section>
       </div>
-
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
