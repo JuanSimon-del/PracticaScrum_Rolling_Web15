@@ -933,7 +933,14 @@
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  object-position: center 25%;
   border-radius: 18px;
+}
+
+.speakers-carrusel > .col:nth-child(6) .speaker-card__photo,
+.speakers-carrusel > .col:nth-child(7) .speaker-card__photo,
+.speakers-carrusel > .col:nth-child(10) .speaker-card__photo {
+  object-position: center top;
 }
 
 .speaker-card__name {
