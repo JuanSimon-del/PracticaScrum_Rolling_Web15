@@ -388,8 +388,8 @@
   text-align: center;
   cursor: pointer;
 }
-.sponsor-form__upload > .bi {
-  color: var(--rc-red);
+.sponsor-form .sponsor-form__upload > .bi-cloud-upload {
+  color: var(--rc-text-mute);
   font-size: 2rem;
 }
 .sponsor-form__upload-text {
