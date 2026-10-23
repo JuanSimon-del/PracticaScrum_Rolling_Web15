@@ -66,12 +66,16 @@
               </p>
 
               <div class="d-flex gap-3 mb-3">
-                <button class="btn btn-outline-light rounded-pill px-4">
-                  Comprar entrada
-                </button>
-                <button class="btn btn-outline-light rounded-pill px-4">
-                  Ver agenda
-                </button>
+                <form action="./404.html" method="get" class="d-inline">
+                  <button class="btn btn-outline-light rounded-pill px-4">
+                    Comprar entrada
+                  </button>
+                </form>
+                <form action="./404.html" method="get" class="d-inline">
+                  <button class="btn btn-outline-light rounded-pill px-4">
+                    Ver agenda
+                  </button>
+                </form>
               </div>
             </div>
             <div class="col-lg-5 mt-5 mt-lg-0">
@@ -344,7 +348,7 @@
                       <span class="hora">18:20</span>
                         <span class="evento">Tu primer día como developer</span>
                         </p>
-                        <p class="subtexto-agenda">Danieal Cardozo</p>
+                        <p class="subtexto-agenda">Daniela Cardozo</p>
                   </div>
                   <div><p>
                       <span class="hora">18:40</span>
@@ -380,7 +384,7 @@
                       <span class="hora">20:20</span>
                         <span class="evento">Mi primer trabajo en IT</span>
                         </p>
-                        <p class="subtexto-agenda">Pablo Bassco</p>
+                        <p class="subtexto-agenda">Pablo Basso</p>
                   </div>
                   <div><p>
                       <span class="hora">20:40</span>
@@ -392,13 +396,13 @@
                       <span class="hora">21:00</span>
                         <span class="evento">Diseño para developers</span>
                         </p>
-                        <p class="subtexto-agenda">Julian Martin</p>
+                        <p class="subtexto-agenda">Tomas Escudero</p>
                   </div>
                   <div><p>
                       <span class="hora">21:20</span>
                         <span class="evento">Tu primera base de datos</span>
                         </p>
-                        <p class="subtexto-agenda">Tomas Escudero</p>
+                        <p class="subtexto-agenda">Andres Perlo</p>
                   </div>
                   <div><p>
                       <span class="hora">21:40</span>
@@ -497,7 +501,9 @@
                     <p>Coffee break y networking con los speakers</p>
                     <p>Grabación de todas las charlas</p>
                   </ul>
-                  <button class="btn-pri fw-bold">Comprar entrada</button>
+                  <form action="./404.html" method="get">
+                    <button class="btn-pri fw-bold">Comprar entrada</button>
+                  </form>
                 </div>
               </div>
 
@@ -523,9 +529,11 @@
                       <p>Coffee break y networking con los speakers</p>
                       <p>Grabación de todas las charlas</p>
                     </ul>
-                    <button class="btn-general fw-bold mt-auto">
-                      Comprar entrada
-                    </button>
+                    <form action="./404.html" method="get">
+                      <button class="btn-general fw-bold mt-auto">
+                        Comprar entrada
+                      </button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -548,9 +556,11 @@
                     <p>Certificado de asistencia</p>
                     <p>Grabación disponible por 30 días</p>
                   </ul>
-                  <button class="btn-virtual w-100 fw-bold py-2">
-                    Comprar entrada
-                  </button>
+                  <form action="./404.html" method="get">
+                    <button class="btn-virtual w-100 fw-bold py-2">
+                      Comprar entrada
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
@@ -622,7 +632,13 @@
                   />
                 </div>
 
-                <button type="button" class="finalizarCompra-continuar">
+                <button
+                  type="submit"
+                  formaction="./404.html"
+                  formmethod="get"
+                  formnovalidate
+                  class="finalizarCompra-continuar"
+                >
                   Continuar
                 </button>
 

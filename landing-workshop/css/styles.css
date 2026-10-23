@@ -364,6 +364,7 @@
 
 .subdivisiones-derecha .subtexto-agenda {
   display: block;
+  width: auto;
   margin: 4px 0 0 84px;
   color: var(--rc-text-mute);
   opacity: 0.65;
