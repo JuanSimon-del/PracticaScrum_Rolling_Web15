@@ -1027,15 +1027,13 @@
   line-height: 1.4;
 }
 .mapa-contenedor {
-  width: 100%;
-  max-width: 1200px;
+  max-width: 600px;
+  max-height: 450px;
   margin: auto;
-  display: flex;
-  justify-content: center;
 }
 .mapa-contenedor iframe {
   width: 100%;
-  height: clamp(280px, 45vw, 450px);
+  height: 100%;
   border-radius: 28px;
 }
 .logo-social-rolling-img {
