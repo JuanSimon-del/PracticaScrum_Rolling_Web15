@@ -942,6 +942,17 @@
   object-position: center 25%;
   border-radius: 18px;
 }
+.speaker-card__photo-frame--zoom {
+  overflow: hidden;
+  border-radius: 18px;
+}
+.speaker-card__photo-frame--zoom .speaker-card__photo {
+  transform: scale(1.5);
+  transform-origin: center 30%;
+}
+.speaker-card__photo--andres {
+  object-position: center 25%;
+}
 .speaker-card__name {
   margin: 16px 0 12px;
   color: var(--rc-white);
@@ -1459,9 +1470,7 @@
     padding-inline: 0;
     scroll-snap-align: start;
   }
-  .speakers-carrusel > .col:nth-child(6) .speaker-card__photo,
-  .speakers-carrusel > .col:nth-child(7) .speaker-card__photo,
-  .speakers-carrusel > .col:nth-child(10) .speaker-card__photo {
+  .speakers-carrusel > .col:nth-child(7) .speaker-card__photo {
     object-position: center top;
   }
 }
