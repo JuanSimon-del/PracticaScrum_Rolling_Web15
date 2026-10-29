@@ -70,7 +70,7 @@
               </p>
 
               <div class="d-flex gap-3 mb-3">
-                <form action="./404.html" method="get" class="d-inline">
+                <form action="./index.html#fC" method="get" class="d-inline">
                   <button class="btn btn-outline-light rounded-pill px-4">
                     Comprar entrada
                   </button>
@@ -494,129 +494,6 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="container sponsor-section my-5">
-        <header class="sponsor-section__header">
-          <h2 class="sponsor-section__title text-center">
-            Sumate como sponsor
-          </h2>
-          <p class="sponsor-section__subtitle text-center">
-            Contactá tu marca con más de 120 talentos IT, programadores junior,
-            semi seniors y líderes tecnológicos del norte argentino. Completá el
-            formulario y nos contactaremos en menos de 24 horas hábiles.
-          </p>
-        </header>
-        <div class="card sponsor-card">
-          <div class="card-body">
-            <form class="sponsor-form" action="./404.html" method="get">
-              <div class="row g-4">
-                <div class="col-12 col-md-6">
-                  <label class="form-label" for="nombreSponsor">NOMBRE</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="nombreSponsor"
-                    placeholder="Ej: Martín"
-                    autocomplete="given-name"
-                    required
-                  />
-                </div>
-                <div class="col-12 col-md-6">
-                  <label class="form-label" for="apellidoSponsor"
-                    >APELLIDO</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="apellidoSponsor"
-                    placeholder="Ej: González"
-                    autocomplete="family-name"
-                    required
-                  />
-                </div>
-                <div class="col-12 col-md-6">
-                  <label class="form-label" for="empresaSponsor">EMPRESA</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="empresaSponsor"
-                    placeholder="Ej: Acme Technologies"
-                    autocomplete="organization"
-                    required
-                  />
-                </div>
-                <div class="col-12 col-md-6">
-                  <label class="form-label" for="emailSponsor"
-                    >EMAIL CORPORATIVO</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="emailSponsor"
-                    placeholder="Ej: martin@acme.com"
-                    autocomplete="email"
-                    required
-                  />
-                </div>
-                <div class="col-12">
-                  <label class="form-label" for="tipoSponsor"
-                    >TIPO DE ESPONSOR</label
-                  >
-                  <select class="form-select" id="tipoSponsor" required>
-                    <option value="" selected disabled>
-                      Seleccioná un nivel de sponsoreo
-                    </option>
-                    <option value="main-partners">
-                      MAIN PARTNERS (NIVEL DIAMANTE)
-                    </option>
-                    <option value="gold-tier">GOLD TIER (NIVEL ORO)</option>
-                    <option value="bronze-tier">
-                      BRONZE TIER (NIVEL BRONCE)
-                    </option>
-                  </select>
-                </div>
-                <div class="col-12">
-                  <span class="form-label">LOGO DE LA EMPRESA</span>
-                  <label class="sponsor-form__upload" for="materialSponsor">
-                    <i class="bi bi-cloud-upload" aria-hidden="true"></i>
-                    <span class="sponsor-form__upload-text">
-                      Hacé clic para adjuntar tu logo o arrastralo aquí
-                    </span>
-                    <span class="sponsor-form__upload-hint">
-                      Archivos aceptados: PNG, SVG, JPG o WEBP (máx. 5 MB).
-                    </span>
-                    <input
-                      type="file"
-                      class="sponsor-form__file"
-                      id="materialSponsor"
-                      aria-label="Adjuntar logo de la empresa"
-                      accept=".png,.svg,.jpg,.jpeg,.webp"
-                      required
-                    />
-                  </label>
-                </div>
-                <div class="col-12">
-                  <label class="form-label" for="propuestaSponsor"
-                    >MENSAJE OPCIONAL</label
-                  >
-                  <textarea
-                    class="form-control sponsor-form__textarea"
-                    id="propuestaSponsor"
-                    rows="5"
-                    placeholder="Contanos sobre tu empresa y por qué busca ser sponsor del evento"
-                    required
-                  ></textarea>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="sponsor-form__submit">
-                    <i class="bi bi-send" aria-hidden="true"></i>
-                    Enviar postulación de Sponsor
-                  </button>
-                </div>
-              </div>
-            </form>
           </div>
         </div>
       </section>
@@ -1093,7 +970,7 @@
                     <p>Coffee break y networking con los speakers</p>
                     <p>Grabación de todas las charlas</p>
                   </ul>
-                  <form action="./404.html" method="get">
+                  <form action="./index.html#fC" method="get">
                     <button class="btn-pri fw-bold">Comprar entrada</button>
                   </form>
                 </div>
@@ -1120,7 +997,7 @@
                       <p>Coffee break y networking con los speakers</p>
                       <p>Grabación de todas las charlas</p>
                     </ul>
-                    <form action="./404.html" method="get">
+                    <form action="./index.html#fC" method="get">
                       <button class="btn-general fw-bold mt-auto">
                         Comprar entrada
                       </button>
@@ -1147,7 +1024,7 @@
                     <p>Certificado de asistencia</p>
                     <p>Grabación disponible por 30 días</p>
                   </ul>
-                  <form action="./404.html" method="get">
+                  <form action="./index.html#fC" method="get">
                     <button class="btn-virtual w-100 fw-bold py-2">
                       Comprar entrada
                     </button>
@@ -1275,125 +1152,77 @@
         role="dialog"
         aria-modal="true"
         aria-labelledby="pagoModalTitulo"
+        aria-describedby="pagoModalAyuda"
         tabindex="-1"
       >
-        <a
-          class="pago-modal__fondo"
-          href="#fC"
-          aria-label="Cerrar ventana de datos y pago"
-        ></a>
+        <a class="pago-modal__fondo" href="#fC" aria-label="Cerrar ventana de datos y pago"></a>
         <div class="pago-modal__dialog">
           <section class="modal-content modal-rc-content pago-modal__contenido">
-            <div class="modal-header border-0 pb-0">
-              <h2 id="pagoModalTitulo" class="modal-title fw-bold fs-4">
-                2 - Datos y Pago
-              </h2>
-              <a
-                class="btn-close pago-modal__cerrar"
-                href="#fC"
-                aria-label="Cerrar ventana"
-              ></a>
+            <div class="modal-header border-0">
+              <div>
+                <p class="pago-modal__etiqueta">Pasos 2 y 3 · Datos y pago</p>
+                <h2 id="pagoModalTitulo" class="modal-title fw-bold fs-4">Completá tus datos</h2>
+              </div>
+              <a class="btn-close pago-modal__cerrar" href="#fC" aria-label="Cerrar ventana"></a>
             </div>
-            <div class="modal-body border-0 pt-3">
-              <form
-                class="form-validacion"
-                action="#modalCompraExitosa"
-                method="get"
-              >
-                <div class="mb-3">
-                  <label for="nombreUsuario" class="form-label fw-bold small"
-                    >Nombre completo:</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control modal-rc-input px-3"
-                    id="nombreUsuario"
-                    maxlength="20"
-                    minlength="4"
-                    required
-                    placeholder="Agostini, Amado"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="dniUsuario" class="form-label fw-bold small"
-                    >DNI:</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control modal-rc-input px-3"
-                    id="dniUsuario"
-                    maxlength="8"
-                    inputmode="numeric"
-                    placeholder="44333555"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="emailUsuario" class="form-label fw-bold small"
-                    >Email:</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control modal-rc-input px-3"
-                    id="emailUsuario"
-                    maxlength="25"
-                    minlength="4"
-                    required
-                    placeholder="amado@gmail.com"
-                  />
-                </div>
-
-                <hr class="my-4 text-secondary" />
-
-                <div class="mb-3">
-                  <label for="tarjeta" class="form-label fw-bold small"
-                    >Número de Tarjeta:</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control modal-rc-input px-3"
-                    id="tarjeta"
-                    placeholder="0000 0000 0000 0000"
-                    minlength="16"
-                    maxlength="16"
-                    required
-                  />
-                </div>
-                <div class="row">
-                  <div class="col-6 mb-3">
-                    <label for="vencimiento" class="form-label fw-bold small"
-                      >Vencimiento:</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control modal-rc-input px-3 text-center"
-                      id="vencimiento"
-                      placeholder="MM/AA"
-                      minlength="4"
-                      maxlength="4"
-                      required
-                    />
+            <div class="modal-body border-0 pt-0">
+              <p id="pagoModalAyuda" class="pago-modal__aviso">
+                Compra de ejemplo. Usá datos ficticios: no se procesan pagos ni se envían entradas.
+              </p>
+              <form class="form-validacion" action="#modalCompraExitosa" method="get">
+                <fieldset class="pago-modal__grupo">
+                  <legend>Datos del asistente</legend>
+                  <div class="mb-3">
+                    <label for="nombreUsuario" class="form-label fw-bold small">Nombre completo</label>
+                    <input type="text" class="form-control modal-rc-input px-3" id="nombreUsuario"
+                      maxlength="80" minlength="4" required placeholder="Ej: Alex García" />
                   </div>
-                  <div class="col-6 mb-3">
-                    <label for="cvv" class="form-label fw-bold small"
-                      >CVV:</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control modal-rc-input px-3 text-center"
-                      id="cvv"
-                      placeholder="123"
-                      minlength="3"
-                      maxlength="4"
-                      required
-                    />
+                  <div class="row g-3">
+                    <div class="col-12 col-md-5">
+                      <label for="dniUsuario" class="form-label fw-bold small">DNI</label>
+                      <input type="text" class="form-control modal-rc-input px-3" id="dniUsuario"
+                        minlength="7" maxlength="8" pattern="[0-9]{7,8}" inputmode="numeric"
+                        title="Ingresá 7 u 8 números, sin puntos ni espacios." placeholder="12345678" required />
+                    </div>
+                    <div class="col-12 col-md-7">
+                      <label for="emailUsuario" class="form-label fw-bold small">Email</label>
+                      <input type="email" class="form-control modal-rc-input px-3" id="emailUsuario"
+                        maxlength="254" required placeholder="ejemplo@example.com" />
+                    </div>
                   </div>
-                </div>
-
-                <div class="modal-footer border-0 pt-0 mt-2">
-                  <button type="submit" class="finalizarCompra-continuar">
-                    Confirmar Pago
-                  </button>
+                </fieldset>
+                <fieldset class="pago-modal__grupo">
+                  <legend>Pago de demostración</legend>
+                  <div class="mb-3">
+                    <label for="tarjeta" class="form-label fw-bold small">Número de tarjeta</label>
+                    <input type="text" class="form-control modal-rc-input px-3" id="tarjeta"
+                      inputmode="numeric" autocomplete="off" pattern="[0-9]{16}" minlength="16" maxlength="16"
+                      title="Ingresá 16 números seguidos, sin espacios." placeholder="0000000000000000"
+                      aria-describedby="pagoTarjetaAyuda" required />
+                    <small id="pagoTarjetaAyuda" class="pago-modal__ayuda">16 números sin espacios. No ingreses una tarjeta real.</small>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col-6">
+                      <label for="vencimiento" class="form-label fw-bold small">Vencimiento</label>
+                      <input type="text" class="form-control modal-rc-input px-3 text-center" id="vencimiento"
+                        placeholder="MM/AA" minlength="5" maxlength="5" pattern="(0[1-9]|1[0-2])/[0-9]{2}"
+                        title="Usá MM/AA, con un mes entre 01 y 12. Por ejemplo: 12/30."
+                        aria-describedby="pagoVencimientoAyuda" required />
+                      <small id="pagoVencimientoAyuda" class="pago-modal__ayuda">Ejemplo: 12/30.</small>
+                    </div>
+                    <div class="col-6">
+                      <label for="cvv" class="form-label fw-bold small">CVV</label>
+                      <input type="password" class="form-control modal-rc-input px-3 text-center" id="cvv"
+                        inputmode="numeric" autocomplete="off" placeholder="123" pattern="[0-9]{3,4}"
+                        minlength="3" maxlength="4" title="Ingresá 3 o 4 números."
+                        aria-describedby="pagoCvvAyuda" required />
+                      <small id="pagoCvvAyuda" class="pago-modal__ayuda">3 o 4 números.</small>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="modal-footer border-0 p-0">
+                  <button type="submit" class="finalizarCompra-continuar">Confirmar pago de ejemplo</button>
+                  <a class="pago-modal__volver" href="#fC">Volver a mi entrada</a>
                 </div>
               </form>
             </div>
@@ -1419,12 +1248,134 @@
             class="modal-content pago-modal__contenido pago-modal__contenido--exito"
           >
             <div class="pago-modal__check" aria-hidden="true">✓</div>
-            <h2 id="compraExitosaTitulo">¡Compra exitosa!</h2>
-            <p>Entrada enviada a tu email.</p>
+            <h2 id="compraExitosaTitulo">¡Simulación completada!</h2>
+            <p>Los datos de ejemplo pasaron la validación. No se realizó ningún cobro ni se enviaron entradas.</p>
             <a class="pago-modal__entendido" href="#fC">Entendido</a>
           </section>
         </div>
       </div>
+
+      <section class="container sponsor-section my-5">
+        <header class="sponsor-section__header">
+          <h2 class="sponsor-section__title text-center">
+            Sumate como sponsor
+          </h2>
+          <p class="sponsor-section__subtitle text-center">
+            Conectá tu marca con más de 120 talentos IT, programadores junior,
+            semi seniors y líderes tecnológicos del norte argentino. Completá el
+            formulario y nos contactaremos en menos de 24 horas hábiles.
+          </p>
+        </header>
+        <div class="card sponsor-card">
+          <div class="card-body">
+            <form class="sponsor-form" action="./404.html" method="get">
+              <div class="row g-4">
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="nombreSponsor">NOMBRE</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombreSponsor"
+                    placeholder="Ej: Martín"
+                    autocomplete="given-name"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="apellidoSponsor"
+                    >APELLIDO</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="apellidoSponsor"
+                    placeholder="Ej: González"
+                    autocomplete="family-name"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="empresaSponsor">EMPRESA</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="empresaSponsor"
+                    placeholder="Ej: Acme Technologies"
+                    autocomplete="organization"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="emailSponsor"
+                    >EMAIL CORPORATIVO</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailSponsor"
+                    placeholder="Ej: martin@acme.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="tipoSponsor"
+                    >TIPO DE ESPONSOR</label
+                  >
+                  <select class="form-select" id="tipoSponsor" required>
+                    <option value="" selected disabled>
+                      Seleccioná un nivel de sponsoreo
+                    </option>
+                    <option value="main-partners">
+                      MAIN PARTNERS (NIVEL DIAMANTE)
+                    </option>
+                    <option value="gold-tier">GOLD TIER (NIVEL ORO)</option>
+                    <option value="bronze-tier">
+                      BRONZE TIER (NIVEL BRONCE)
+                    </option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <span class="form-label">LOGO DE LA EMPRESA</span>
+                  <label class="sponsor-form__upload" for="materialSponsor">
+                    <i class="bi bi-cloud-upload" aria-hidden="true"></i>
+                    <span class="sponsor-form__upload-text">
+                      Hacé clic para adjuntar tu logo o arrastralo aquí
+                    </span>
+                    <span class="sponsor-form__upload-hint">
+                      Archivos aceptados: PNG, SVG, JPG o WEBP (máx. 5 MB).
+                    </span>
+                    <input
+                      type="file"
+                      class="sponsor-form__file"
+                      id="materialSponsor"
+                      aria-label="Adjuntar logo de la empresa"
+                      accept=".png,.svg,.jpg,.jpeg,.webp"
+                    />
+                  </label>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="propuestaSponsor"
+                    >MENSAJE OPCIONAL</label
+                  >
+                  <textarea
+                    class="form-control sponsor-form__textarea"
+                    id="propuestaSponsor"
+                    rows="5"
+                    placeholder="Contanos sobre tu empresa y por qué busca ser sponsor del evento"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="sponsor-form__submit">
+                    <i class="bi bi-send" aria-hidden="true"></i>
+                    Enviar postulación de Sponsor
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
 
       <section id="como-llegar" class="tarjeta mb-5 py-5 text-white">
         <div class="container custom-container">
@@ -1478,13 +1429,13 @@
 
               <div class="d-flex gap-3 mt-4">
                 <a
-                  href="./404.html"
+                  href="https://www.bing.com/maps?q=Calle%20General%20Paz%20576%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n%2C%20Argentina" target="_blank" rel="noopener noreferrer"
                   class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold"
                 >
                   Abrir en Bing Maps
                 </a>
                 <a
-                  href="./404.html"
+                  href="#fC"
                   class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold"
                 >
                   Comprar entrada
@@ -1495,8 +1446,8 @@
             <div class="col-lg-6">
               <div class="mapa-contenedor ratio ratio-4x3">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1236597814645!2d-65.20959862463998!3d-26.83601889000356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0ef4c82ae3%3A0x14c5e9aa0d5e5643!2sGral.%20Jos%C3%A9%20Mar%C3%ADa%20Paz%20579%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1792693216560!5m2!1ses-419!2sar"
-                  title="Mapa de Rolling Code School en San Miguel de Tucumán"
+                  src="https://maps.google.com/maps?q=Calle%20General%20Paz%20576%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n%2C%20Argentina&amp;output=embed"
+                  title="Mapa de General Paz 576, San Miguel de Tucumán"
                   loading="lazy"
                 ></iframe>
               </div>
