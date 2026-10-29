@@ -732,16 +732,7 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.pago-modal__aviso {
-  margin-bottom: 24px;
-  padding: 12px 16px;
-  border-left: 3px solid var(--rc-red);
-  border-radius: 8px;
-  background-color: var(--rc-black);
-  color: var(--rc-text-soft);
-  font-size: 14px;
-  line-height: 1.55;
-}
+
 .pago-modal__grupo {
   min-width: 0;
   margin-bottom: 24px;
@@ -1582,5 +1573,124 @@
 @media (hover: hover) {
   .sponsors-tarjeta:hover {
     box-shadow: 0 0 24px -8px var(--sponsor-acento, var(--rc-red));
+  }
+}
+
+/* Consistent spacing between landing sections */
+.bloque_hero {
+  margin-top: 48px;
+  margin-bottom: 0;
+}
+
+main > .seccion-landing {
+  margin-top: 96px;
+  margin-bottom: 0;
+}
+
+main > .seccion-estadisticas {
+  margin-top: 32px;
+}
+
+main > .finalizarCompra-section {
+  margin-top: 56px;
+}
+
+.speakers-section.seccion-landing {
+  padding-block: 0;
+}
+
+@media (max-width: 767.98px) {
+  .bloque_hero {
+    margin-top: 24px;
+  }
+
+  main > .seccion-landing {
+    margin-top: 48px;
+  }
+
+  main > .seccion-estadisticas {
+    margin-top: 24px;
+  }
+}
+
+/* Shared section typography */
+.titulo-seccion {
+  margin-bottom: 24px;
+  color: var(--rc-white);
+  font-size: clamp(34px, 4.5vw, 56px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+.etiqueta-seccion {
+  margin-bottom: 12px;
+  color: var(--rc-red);
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#agenda .evento {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+#agenda .subtexto-agenda {
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.sponsor-section__subtitle {
+  max-width: 70ch;
+  margin-inline: auto;
+  line-height: 1.55;
+}
+
+/* Keep button feedback subtle and consistent. */
+.bloque_hero .btn,
+.finalizarCompra-continuar,
+.sponsor-form__submit {
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.bloque_hero .parrafo-principal {
+  margin-bottom: 32px;
+}
+
+@media (max-width: 767.98px) {
+  .bloque_hero {
+    max-height: none;
+  }
+
+  .bloque_hero .parrafo-principal {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  .hero-acciones {
+    flex-direction: column;
+  }
+
+  .hero-acciones form,
+  .hero-acciones .btn {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bloque_hero .btn,
+  .finalizarCompra-continuar,
+  .sponsor-form__submit,
+  .sponsors-tarjeta,
+  .speaker-card,
+  .speaker-card__talk {
+    transition: none;
   }
 }

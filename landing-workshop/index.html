@@ -49,7 +49,7 @@
       </nav>
     </header>
     <main>
-      <section class="bloque_hero my-4 mx-auto">
+      <section class="bloque_hero mx-auto">
         <div class="container custom-container">
           <div class="row align-items-center">
             <div class="col-lg-7 pe-lg-5">
@@ -63,13 +63,13 @@
                 <span class="palabra_programar">PROGRAMAR?</span>
               </h1>
 
-              <p class="parrafo-principal mb-5">
+              <p class="parrafo-principal">
                 Una tarde con diez speakers de Rolling Code School para ordenar
                 tus primeros pasos: qué aprender, cómo practicar y cómo mostrar
                 lo que sabés.
               </p>
 
-              <div class="d-flex gap-3 mb-3">
+              <div class="hero-acciones d-flex gap-3 mb-3">
                 <form action="./index.html#fC" method="get" class="d-inline">
                   <button class="btn btn-outline-light rounded-pill px-4">
                     Comprar entrada
@@ -86,7 +86,7 @@
                 </form>
               </div>
             </div>
-            <div class="col-lg-5 mt-5 mt-lg-0">
+            <div class="col-lg-5 mt-4 mt-lg-0">
               <div class="card card_agenda p-4">
                 <div class="card-body">
                   <div class="d-flex align-items-center mb-4">
@@ -159,7 +159,7 @@
         </div>
       </section>
 
-      <section class="container my-5">
+      <section class="container seccion-landing seccion-estadisticas">
         <div class="card card-estadisticas p-4 p-md-5">
           <div class="row text-center text-md-start g-4">
             <div class="col-6 col-lg-3">
@@ -217,10 +217,10 @@
         </div>
       </section>
 
-      <section id="speakers" class="speakers-section">
+      <section id="speakers" class="speakers-section seccion-landing">
         <div class="container">
-          <p class="speakers-label">SPEAKERS</p>
-          <h2 class="speakers-title">Diez charlas, un mismo objetivo</h2>
+          <p class="speakers-label etiqueta-seccion">SPEAKERS</p>
+          <h2 class="speakers-title titulo-seccion">Diez charlas, un mismo objetivo</h2>
           <p class="speakers-ayudaCarrusel">
             Deslizá para conocer a los diez speakers.
           </p>
@@ -307,7 +307,9 @@
             </div>
             <div class="col">
               <article class="speaker-card">
-                <div class="speaker-card__photo-frame speaker-card__photo-frame--zoom">
+                <div
+                  class="speaker-card__photo-frame speaker-card__photo-frame--zoom"
+                >
                   <img
                     class="speaker-card__photo"
                     src="./img/speakers/speaker-06-tomas-gomez.jpg?v=2"
@@ -387,12 +389,13 @@
           </div>
         </div>
       </section>
-      <section id="agenda" class="container bloque-agregado my-4">
+      <section id="agenda" class="container bloque-agregado seccion-landing">
         <div class="row g-4 justify-content-center">
           <div class="card agenda col-12 col-md-6">
             <div class="card h-100">
               <div class="card-body text-center bloque-agregado-izquierda">
-                <h1 class="card-title fw-bold">jueves 19 de noviembre</h1>
+                <p class="etiqueta-seccion">Agenda</p>
+                <h2 class="card-title titulo-seccion">Jueves 19 de noviembre</h2>
                 <p class="card-text">
                   Diez charlas cortas para salir con un plan claro.
                 </p>
@@ -498,11 +501,11 @@
         </div>
       </section>
 
-      <section id="sponsors" class="sponsors-section">
+      <section id="sponsors" class="sponsors-section seccion-landing">
         <div class="container">
           <header class="mb-4">
-            <p class="sponsors-etiqueta">SPONSORS</p>
-            <h2 class="sponsors-titulo">Nuestros sponsors</h2>
+            <p class="sponsors-etiqueta etiqueta-seccion">SPONSORS</p>
+            <h2 class="sponsors-titulo titulo-seccion">Nuestros sponsors</h2>
           </header>
 
           <div class="mb-4">
@@ -885,21 +888,15 @@
           </div>
         </div>
       </section>
-      <div class="container fw-bold">
-        <p></p>
-      </div>
       <div
-        class="contenedor container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center"
+        class="contenedor entradas-section seccion-landing container-fluid d-flex flex-column align-items-center"
       >
-        <section class="tarjeta mb-5 text-white">
+        <section class="tarjeta text-white">
           <div class="mb-4">
-            <span
-              class="text-danger-custom text-uppercase fw-bold small tracking-wider"
-              ><p>Entradas</p></span
-            >
-            <h1 class="fw-bold mt-1 text-white">
+            <p class="etiqueta-seccion">Entradas</p>
+            <h2 class="titulo-seccion text-white">
               Asegurá tu lugar antes de que suba el precio
-            </h1>
+            </h2>
           </div>
 
           <div class="tarjeta-row text-center">
@@ -1035,7 +1032,7 @@
           </div>
         </section>
       </div>
-      <section id="fC" class="finalizarCompra-section">
+      <section id="fC" class="finalizarCompra-section seccion-landing">
         <div class="container">
           <header class="finalizarCompra-header">
             <p class="finalizarCompra-label">Compra segura</p>
@@ -1155,74 +1152,157 @@
         aria-describedby="pagoModalAyuda"
         tabindex="-1"
       >
-        <a class="pago-modal__fondo" href="#fC" aria-label="Cerrar ventana de datos y pago"></a>
+        <a
+          class="pago-modal__fondo"
+          href="#fC"
+          aria-label="Cerrar ventana de datos y pago"
+        ></a>
         <div class="pago-modal__dialog">
           <section class="modal-content modal-rc-content pago-modal__contenido">
             <div class="modal-header border-0">
               <div>
                 <p class="pago-modal__etiqueta">Pasos 2 y 3 · Datos y pago</p>
-                <h2 id="pagoModalTitulo" class="modal-title fw-bold fs-4">Completá tus datos</h2>
+                <h2 id="pagoModalTitulo" class="modal-title fw-bold fs-4">
+                  Completá tus datos
+                </h2>
               </div>
-              <a class="btn-close pago-modal__cerrar" href="#fC" aria-label="Cerrar ventana"></a>
+              <a
+                class="btn-close pago-modal__cerrar"
+                href="#fC"
+                aria-label="Cerrar ventana"
+              ></a>
             </div>
             <div class="modal-body border-0 pt-0">
-              <p id="pagoModalAyuda" class="pago-modal__aviso">
-                Compra de ejemplo. Usá datos ficticios: no se procesan pagos ni se envían entradas.
-              </p>
-              <form class="form-validacion" action="#modalCompraExitosa" method="get">
+              <form
+                class="form-validacion"
+                action="#modalCompraExitosa"
+                method="get"
+              >
                 <fieldset class="pago-modal__grupo">
-                  <legend>Datos del asistente</legend>
                   <div class="mb-3">
-                    <label for="nombreUsuario" class="form-label fw-bold small">Nombre completo</label>
-                    <input type="text" class="form-control modal-rc-input px-3" id="nombreUsuario"
-                      maxlength="80" minlength="4" required placeholder="Ej: Alex García" />
+                    <label for="nombreUsuario" class="form-label fw-bold small"
+                      >Nombre completo</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control modal-rc-input px-3"
+                      id="nombreUsuario"
+                      maxlength="80"
+                      minlength="4"
+                      required
+                      placeholder="Ej: Alex García"
+                    />
                   </div>
                   <div class="row g-3">
                     <div class="col-12 col-md-5">
-                      <label for="dniUsuario" class="form-label fw-bold small">DNI</label>
-                      <input type="text" class="form-control modal-rc-input px-3" id="dniUsuario"
-                        minlength="7" maxlength="8" pattern="[0-9]{7,8}" inputmode="numeric"
-                        title="Ingresá 7 u 8 números, sin puntos ni espacios." placeholder="12345678" required />
+                      <label for="dniUsuario" class="form-label fw-bold small"
+                        >DNI</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control modal-rc-input px-3"
+                        id="dniUsuario"
+                        minlength="7"
+                        maxlength="8"
+                        pattern="[0-9]{7,8}"
+                        inputmode="numeric"
+                        title="Ingresá 7 u 8 números, sin puntos ni espacios."
+                        placeholder="12345678"
+                        required
+                      />
                     </div>
                     <div class="col-12 col-md-7">
-                      <label for="emailUsuario" class="form-label fw-bold small">Email</label>
-                      <input type="email" class="form-control modal-rc-input px-3" id="emailUsuario"
-                        maxlength="254" required placeholder="ejemplo@example.com" />
+                      <label for="emailUsuario" class="form-label fw-bold small"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control modal-rc-input px-3"
+                        id="emailUsuario"
+                        maxlength="254"
+                        required
+                        placeholder="ejemplo@example.com"
+                      />
                     </div>
                   </div>
                 </fieldset>
                 <fieldset class="pago-modal__grupo">
                   <legend>Pago de demostración</legend>
                   <div class="mb-3">
-                    <label for="tarjeta" class="form-label fw-bold small">Número de tarjeta</label>
-                    <input type="text" class="form-control modal-rc-input px-3" id="tarjeta"
-                      inputmode="numeric" autocomplete="off" pattern="[0-9]{16}" minlength="16" maxlength="16"
-                      title="Ingresá 16 números seguidos, sin espacios." placeholder="0000000000000000"
-                      aria-describedby="pagoTarjetaAyuda" required />
-                    <small id="pagoTarjetaAyuda" class="pago-modal__ayuda">16 números sin espacios. No ingreses una tarjeta real.</small>
+                    <label for="tarjeta" class="form-label fw-bold small"
+                      >Número de tarjeta</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control modal-rc-input px-3"
+                      id="tarjeta"
+                      inputmode="numeric"
+                      autocomplete="off"
+                      pattern="[0-9]{16}"
+                      minlength="16"
+                      maxlength="16"
+                      title="Ingresá 16 números seguidos, sin espacios."
+                      placeholder="0000000000000000"
+                      aria-describedby="pagoTarjetaAyuda"
+                      required
+                    />
+                    <small id="pagoTarjetaAyuda" class="pago-modal__ayuda"
+                      >16 números sin espacios. No ingreses una tarjeta
+                      real.</small
+                    >
                   </div>
                   <div class="row g-3">
                     <div class="col-6">
-                      <label for="vencimiento" class="form-label fw-bold small">Vencimiento</label>
-                      <input type="text" class="form-control modal-rc-input px-3 text-center" id="vencimiento"
-                        placeholder="MM/AA" minlength="5" maxlength="5" pattern="(0[1-9]|1[0-2])/[0-9]{2}"
+                      <label for="vencimiento" class="form-label fw-bold small"
+                        >Vencimiento</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control modal-rc-input px-3 text-center"
+                        id="vencimiento"
+                        placeholder="MM/AA"
+                        minlength="5"
+                        maxlength="5"
+                        pattern="(0[1-9]|1[0-2])/[0-9]{2}"
                         title="Usá MM/AA, con un mes entre 01 y 12. Por ejemplo: 12/30."
-                        aria-describedby="pagoVencimientoAyuda" required />
-                      <small id="pagoVencimientoAyuda" class="pago-modal__ayuda">Ejemplo: 12/30.</small>
+                        aria-describedby="pagoVencimientoAyuda"
+                        required
+                      />
+                      <small id="pagoVencimientoAyuda" class="pago-modal__ayuda"
+                        >Ejemplo: 12/30.</small
+                      >
                     </div>
                     <div class="col-6">
-                      <label for="cvv" class="form-label fw-bold small">CVV</label>
-                      <input type="password" class="form-control modal-rc-input px-3 text-center" id="cvv"
-                        inputmode="numeric" autocomplete="off" placeholder="123" pattern="[0-9]{3,4}"
-                        minlength="3" maxlength="4" title="Ingresá 3 o 4 números."
-                        aria-describedby="pagoCvvAyuda" required />
-                      <small id="pagoCvvAyuda" class="pago-modal__ayuda">3 o 4 números.</small>
+                      <label for="cvv" class="form-label fw-bold small"
+                        >CVV</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control modal-rc-input px-3 text-center"
+                        id="cvv"
+                        inputmode="numeric"
+                        autocomplete="off"
+                        placeholder="123"
+                        pattern="[0-9]{3,4}"
+                        minlength="3"
+                        maxlength="4"
+                        title="Ingresá 3 o 4 números."
+                        aria-describedby="pagoCvvAyuda"
+                        required
+                      />
+                      <small id="pagoCvvAyuda" class="pago-modal__ayuda"
+                        >3 o 4 números.</small
+                      >
                     </div>
                   </div>
                 </fieldset>
                 <div class="modal-footer border-0 p-0">
-                  <button type="submit" class="finalizarCompra-continuar">Confirmar pago de ejemplo</button>
-                  <a class="pago-modal__volver" href="#fC">Volver a mi entrada</a>
+                  <button type="submit" class="finalizarCompra-continuar">
+                    Confirmar pago de ejemplo
+                  </button>
+                  <a class="pago-modal__volver" href="#fC"
+                    >Volver a mi entrada</a
+                  >
                 </div>
               </form>
             </div>
@@ -1249,15 +1329,18 @@
           >
             <div class="pago-modal__check" aria-hidden="true">✓</div>
             <h2 id="compraExitosaTitulo">¡Simulación completada!</h2>
-            <p>Los datos de ejemplo pasaron la validación. No se realizó ningún cobro ni se enviaron entradas.</p>
+            <p>
+              Los datos de ejemplo pasaron la validación. No se realizó ningún
+              cobro ni se enviaron entradas.
+            </p>
             <a class="pago-modal__entendido" href="#fC">Entendido</a>
           </section>
         </div>
       </div>
 
-      <section class="container sponsor-section my-5">
+      <section class="container sponsor-section seccion-landing">
         <header class="sponsor-section__header">
-          <h2 class="sponsor-section__title text-center">
+          <h2 class="sponsor-section__title titulo-seccion text-center">
             Sumate como sponsor
           </h2>
           <p class="sponsor-section__subtitle text-center">
@@ -1377,21 +1460,14 @@
         </div>
       </section>
 
-      <section id="como-llegar" class="tarjeta mb-5 py-5 text-white">
+      <section id="como-llegar" class="tarjeta seccion-landing text-white">
         <div class="container custom-container">
           <div class="row align-items-center g-4">
             <div class="col-lg-6">
-              <p
-                class="text-danger-custom text-uppercase fw-bold small tracking-wider mb-2"
-              >
-                Cómo llegar
-              </p>
-
-              <h1 class="fw-bold mb-4 text-white">Te esperamos en</h1>
-              <h1 class="fw-bold mb-4 text-white">
-                Rolling Code <br />
-                School
-              </h1>
+              <p class="etiqueta-seccion">Cómo llegar</p>
+              <h2 class="titulo-seccion text-white">
+                Te esperamos en<br />Rolling Code School
+              </h2>
               <div class="d-flex align-items-start gap-3 mb-4">
                 <img
                   src="./img/iconos/ubicacion.svg"
@@ -1429,7 +1505,9 @@
 
               <div class="d-flex gap-3 mt-4">
                 <a
-                  href="https://www.bing.com/maps?q=Calle%20General%20Paz%20576%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n%2C%20Argentina" target="_blank" rel="noopener noreferrer"
+                  href="https://www.bing.com/maps?q=Calle%20General%20Paz%20576%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n%2C%20Argentina"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold"
                 >
                   Abrir en Bing Maps
