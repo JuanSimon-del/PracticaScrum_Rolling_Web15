@@ -273,6 +273,10 @@
   gap: 24px;
   padding-block: 12px;
 }
+.site-header__control,
+.site-header__boton {
+  display: none;
+}
 .site-header__brand {
   display: block;
   flex: 0 0 auto;
@@ -1379,20 +1383,60 @@
     max-width: 1200px;
   }
   .site-header {
-    align-items: flex-start;
-    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
     gap: 12px;
+  }
+  .site-header__control {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .site-header__boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 44px;
+    padding: 10px 14px;
+    border: 1px solid var(--rc-border);
+    border-radius: 12px;
+    color: var(--rc-white);
+    background-color: var(--rc-surface);
+    cursor: pointer;
+  }
+  .site-header__hamburguesa {
+    width: 18px;
+    height: 14px;
+    border-top: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    background: linear-gradient(currentColor, currentColor) center / 100% 2px no-repeat;
+  }
+  .site-header__control:checked + .site-header__boton {
+    border-color: var(--rc-red);
+    background-color: var(--rc-red);
+  }
+  .site-header__control:checked ~ .navegacion-principal {
+    display: block;
   }
   .site-header__logo {
     width: clamp(120px, 35vw, 150px);
   }
   .navegacion-principal {
+    display: none;
     width: 100%;
+    padding: 12px;
+    border: 1px solid var(--rc-border);
+    border-radius: 16px;
+    background-color: var(--rc-surface);
   }
   .navegacion-principal .nav {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 4px;
+    grid-template-columns: 1fr;
+    gap: 8px;
     width: 100%;
   }
   .navegacion-principal .nav-item,
@@ -1401,8 +1445,10 @@
     width: 100%;
   }
   .navegacion-principal .nav-link {
-    padding: 0.35rem 0.4rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 10px 14px;
   }
   .bloque_hero {
     width: calc(100% - 24px);

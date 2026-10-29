@@ -31,7 +31,22 @@
           class="site-header__logo"
         />
       </a>
-      <nav class="navegacion-principal" aria-label="Navegación principal">
+      <input
+        class="site-header__control"
+        type="checkbox"
+        id="menu-principal"
+        aria-controls="enlaces-principales"
+        aria-label="Mostrar u ocultar el menú principal"
+      />
+      <label class="site-header__boton" for="menu-principal">
+        <span class="site-header__hamburguesa" aria-hidden="true"></span>
+        Menú
+      </label>
+      <nav
+        class="navegacion-principal"
+        id="enlaces-principales"
+        aria-label="Navegación principal"
+      >
         <ul class="nav nav-pills">
           <li class="nav-item">
             <a class="nav-link" href="#speakers">Speakers</a>
