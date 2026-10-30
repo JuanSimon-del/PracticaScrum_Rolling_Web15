@@ -1822,3 +1822,26 @@ main > .finalizarCompra-section {
     --minutos: 40;
   }
 }
+
+@property --num4 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+.anim-2 {
+  counter-reset: contador4 var(--num4);
+  animation: conteo2 1.5s ease-out forwards;
+}
+
+.anim-2::after {
+  content: counter(contador4);
+}
+
+@keyframes conteo2 {
+  from {
+    --num4: 0;
+  }
+  to {
+    --num4: 2;
+  }
+}
