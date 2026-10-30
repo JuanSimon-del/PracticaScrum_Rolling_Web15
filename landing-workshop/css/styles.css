@@ -1766,3 +1766,27 @@ main > .finalizarCompra-section {
     --num: 120;
   }
 }
+
+@property --num2 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.anim-10 {
+  counter-reset: contador2 var(--num2);
+  animation: conteo10 2.5s ease-out forwards;
+}
+
+.anim-10::after {
+  content: counter(contador2);
+}
+
+@keyframes conteo10 {
+  from {
+    --num2: 0;
+  }
+  to {
+    --num2: 10;
+  }
+}
