@@ -1790,3 +1790,35 @@ main > .finalizarCompra-section {
     --num2: 10;
   }
 }
+
+@property --horas {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --minutos {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.anim-3h40 {
+  counter-reset: contHoras var(--horas) contMinutos var(--minutos);
+  animation: conteoTiempo 2s ease-out forwards;
+}
+
+.anim-3h40::after {
+  content: counter(contHoras) " h " counter(contMinutos);
+}
+
+@keyframes conteoTiempo {
+  from {
+    --horas: 0;
+    --minutos: 0;
+  }
+  to {
+    --horas: 3;
+    --minutos: 40;
+  }
+}
