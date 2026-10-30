@@ -1414,7 +1414,8 @@
     height: 14px;
     border-top: 2px solid currentColor;
     border-bottom: 2px solid currentColor;
-    background: linear-gradient(currentColor, currentColor) center / 100% 2px no-repeat;
+    background: linear-gradient(currentColor, currentColor) center / 100% 2px
+      no-repeat;
   }
   .site-header__control:checked + .site-header__boton {
     border-color: var(--rc-red);
@@ -1739,5 +1740,29 @@ main > .finalizarCompra-section {
   .speaker-card,
   .speaker-card__talk {
     transition: none;
+  }
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.anim-120 {
+  counter-reset: contador var(--num);
+  animation: conteo120 2.5s ease-out forwards;
+}
+
+.anim-120::after {
+  content: counter(contador);
+}
+
+@keyframes conteo120 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 120;
   }
 }
